@@ -52,10 +52,14 @@ app.use((req, res) => {
   }
 });
 
-// Start server
-app.listen(PORT, () => {
-  console.log(`===============================================`);
-  console.log(` Rumah Bunda LMS Backend berjalan di:`);
-  console.log(` http://localhost:${PORT}`);
-  console.log(`===============================================`);
-});
+// Start server (only if executed directly, not as a serverless function)
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`===============================================`);
+    console.log(` Rumah Bunda LMS Backend berjalan di:`);
+    console.log(` http://localhost:${PORT}`);
+    console.log(`===============================================`);
+  });
+}
+
+module.exports = app;

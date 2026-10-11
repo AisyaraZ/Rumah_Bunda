@@ -3,13 +3,28 @@ const path = require('path');
 const fs = require('fs');
 const bcrypt = require('bcryptjs');
 
-// Ensure data directory exists
-const dataDir = path.join(__dirname, '..', 'data');
-if (!fs.existsSync(dataDir)) {
-  fs.mkdirSync(dataDir, { recursive: true });
+// Determine database path (compatible with local environment and Vercel Serverless)
+let dbPath;
+if (process.env.VERCEL) {
+  // On Vercel serverless, root filesystem is read-only; copy initial db to /tmp for write access
+  const tmpDbPath = path.join('/tmp', 'lms_rumah_bunda.db');
+  const sourceDbPath = path.join(__dirname, '..', 'data', 'lms_rumah_bunda.db');
+  if (!fs.existsSync(tmpDbPath) && fs.existsSync(sourceDbPath)) {
+    try {
+      fs.copyFileSync(sourceDbPath, tmpDbPath);
+    } catch (err) {
+      console.warn('Could not copy initial db to /tmp:', err);
+    }
+  }
+  dbPath = tmpDbPath;
+} else {
+  const dataDir = path.join(__dirname, '..', 'data');
+  if (!fs.existsSync(dataDir)) {
+    fs.mkdirSync(dataDir, { recursive: true });
+  }
+  dbPath = path.join(dataDir, 'lms_rumah_bunda.db');
 }
 
-const dbPath = path.join(dataDir, 'lms_rumah_bunda.db');
 const db = new Database(dbPath);
 
 // Enable foreign keys

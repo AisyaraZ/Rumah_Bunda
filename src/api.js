@@ -1,5 +1,6 @@
 // API Client Helper
-const BASE_URL = '/api';
+// Supports custom backend URL (for Vercel + separate backend deployment)
+const BASE_URL = import.meta.env.VITE_API_URL || '/api';
 
 export async function fetchApi(endpoint, options = {}) {
   const token = localStorage.getItem('rb_token');

@@ -1,0 +1,953 @@
+Rumah Bunda
+Bilangan Bulat
+dan Aljabar
+Bulan 1 dan Bulan 2 	6 pertemuan 	1 pertemuan 60 menit
+Nama
+Kelas
+L E S & B I M B I N GA N B E L A JA R
+M O D U L B E L A J A R · M AT E M AT I K A
+Materi, contoh soal, latihan, evaluasi, dan kunci
+jawaban untuk enam pertemuan pertama.
+
+-- 1 of 34 --
+
+Rumah Bunda · Modul Matematika Bulan 12	2
+MK-toc
+Daftar isi
+Cara memakai modul 	3
+Bulan 1 · Bilangan Bulat 	4
+1 Mengenal bilangan bulat 	5
+2 Penjumlahan dan pengurangan bilangan bulat 	8
+3 Perkalian, pembagian, dan evaluasi bilangan bulat 	12
+✓ Evaluasi Bulan 1 	16
+Bulan 2 · Aljabar 	17
+4 Mengenal bentuk aljabar 	18
+5 Menyederhanakan bentuk aljabar 	21
+6 Penerapan aljabar dan evaluasi 	25
+✓ Evaluasi Bulan 2 	28
+Kunci jawaban 	29
+Saran pelaksanaan les 	32
+MK f
+
+-- 2 of 34 --
+
+3	Rumah Bunda · Modul Matematika Bulan 12
+MK-front
+Cara memakai modul
+Pemanasan 	Soal lisan singkat di awal pertemuan untuk mengaktifkan ingatan.
+Materi 	Penjelasan konsep dengan gambar, tabel, dan kotak Ingat serta Awas.
+Contoh soal 	Dikerjakan bersama pengajar, lengkap dengan langkahnya.
+Latihan
+mandiri
+Dasar, Lanjut, dan Tantangan. Tulis jawaban di garis titik-titik.
+Evaluasi 	Sepuluh soal di akhir tiap bulan untuk melihat pemahaman.
+Kunci jawaban Untuk pengajar, ada di bagian belakang buku.
+Peta belajar
+1 Mengenal bilangan bulat
+13 soal latihan 2
+Penjumlahan dan pengurangan
+bilangan bulat
+17 soal latihan
+3
+Perkalian, pembagian, dan evaluasi
+bilangan bulat
+14 soal latihan
+4 Mengenal bentuk aljabar
+14 soal latihan
+5 Menyederhanakan bentuk aljabar
+17 soal latihan 	6 Penerapan aljabar dan evaluasi
+9 soal latihan
+Alur satu pertemuan 60 menit)
+5′ 	15′ 	15′ 	20′ 	5′
+Pemanasan 5 menit Soal lisan untuk mengaktifkan ingatan.
+Konsep 	15 menit Jelaskan materi dengan garis bilangan atau contoh benda.
+Contoh soal 15 menit Kerjakan bersama, siswa menyebut langkah berikutnya.
+Latihan 	20 menit Siswa mengerjakan latihan mandiri sendiri.
+Penutup 	5 menit 5 soal singkat dan rangkuman bersama.
+
+-- 3 of 34 --
+
+MK-bulan1
+B U L A N 1
+Bilangan Bulat
+1
+Mengenal bilangan bulat
+2
+Penjumlahan dan pengurangan bilangan bulat
+3
+Perkalian, pembagian, dan evaluasi bilangan bulat
+✓ Evaluasi Bulan 1
+Siswa mampu mengenali bilangan positif, negatif, dan nol,
+membandingkan bilangan, serta mengurutkannya pada garis bilangan.
+Siswa mampu melakukan penjumlahan dan pengurangan bilangan
+bulat serta menerapkannya dalam soal cerita.
+Siswa mampu melakukan perkalian dan pembagian bilangan bulat,
+menyelesaikan operasi campuran sederhana, dan memecahkan soal
+cerita.
+10 soal untuk mengukur pemahaman satu bulan penuh.
+
+-- 4 of 34 --
+
+5	Rumah Bunda · Modul Matematika Bulan 12
+MK-p1
+PERTEMUAN
+1
+B U L A N 1 · B I L A N G A N B U L AT
+Mengenal bilangan bulat
+T U J UA N P E M B E L A JA R A N
+Siswa mampu mengenali bilangan positif, negatif, dan nol, membandingkan bilangan, serta
+mengurutkannya pada garis bilangan.
+Pemanasan 5 menit, dijawab lisan
+ Suhu 6°C di bawah nol ditulis dengan bilangan …
+ Mana yang lebih besar: 3 atau 8?
+ Sebutkan satu bilangan yang lebih kecil dari 0.
+A Mengenal bilangan bulat
+Bilangan bulat terdiri dari bilangan bulat negatif, nol, dan bilangan bulat positif.
+3, 2, 1
+Bilangan negatif
+Lebih kecil dari nol, ditulis
+dengan tanda −.
+0
+Nol
+Bukan positif dan bukan
+negatif.
+1, 2, 3
+Bilangan positif
+Lebih besar dari nol.
+5 	4 	3 	2 	1 	0 	1 	2 	3 	4 	5
+← makin kecil 	makin besar →
+Pada garis bilangan, nilai semakin besar ke arah kanan dan semakin kecil ke arah kiri.
+Bilangan bulat dalam kehidupan sehari-hari
+Situasi 	Ditulis sebagai
+Suhu 5°C di atas nol 	5
+Suhu 3°C di bawah nol 	3
+Lantai dasar gedung 	0
+Dua lantai di atas lantai dasar 	2
+Satu lantai di bawah tanah 	1
+
+-- 5 of 34 --
+
+Rumah Bunda · Modul Matematika Bulan 12	6
+Dua istilah penting
+Lawan bilangan berada di seberang 0 dengan jarak yang sama. Lawan dari 5 adalah 5, lawan
+dari 3 adalah 3, dan lawan dari 0 adalah 0.
+Nilai mutlak adalah jarak bilangan ke 0. Ditulis |9|  9 dan |5|  5. Nilai mutlak tidak pernah
+negatif.
+B Membandingkan bilangan bulat
+Gunakan simbol berikut:
+> berarti lebih besar dari. 	< berarti lebih kecil dari. 	= berarti sama dengan.
+Kunci membandingkan: bilangan yang letaknya lebih ke kanan pada garis bilangan nilainya lebih besar.
+Awas, jebakan!
+Bilangan negatif yang nilai mutlaknya lebih besar justru nilainya lebih kecil. Contohnya 9  2,
+walaupun 9 lebih besar dari 2.
+C Contoh soal
+ 5  2, karena 5 berada di sebelah kanan 2.
+ 7  3, karena 7 berada di sebelah kiri 3.
+ 4  0, karena semua bilangan negatif lebih kecil dari nol.
+CONTOH
+Urutkan bilangan berikut dari yang terkecil: 4, 6, 0, 2, 7.
+Cara: Bayangkan semua bilangan di garis bilangan, lalu baca dari kiri ke kanan.
+Jawaban: 6, 2, 0, 4, 7
+CONTOH 1
+Urutkan dari yang terbesar: 1, 10, 3, 5.
+Cara: Baca dari kanan ke kiri. Yang paling kanan adalah 3, lalu 1, 5, dan 10.
+Jawaban: 3, 1, 5, 10
+CONTOH 2
+Isilah dengan >, <, atau =: 15 3
+Cara: 15 berada di sebelah kiri 3, jadi 15 lebih kecil.
+Jawaban: 15  3
+CONTOH 3
+
+-- 6 of 34 --
+
+7	Rumah Bunda · Modul Matematika Bulan 12
+Rangkuman
+Bilangan bulat terdiri dari negatif, nol, dan positif.
+Makin ke kanan makin besar, makin ke kiri makin kecil.
+Nilai mutlak adalah jarak ke 0, jadi selalu positif atau nol.
+Latihan mandiri
+DASA R
+1 Sebutkan tiga bilangan bulat negatif.
+2 Isilah dengan >, <, atau =: 4 1
+3 Isilah dengan >, <, atau  3 5
+4 Urutkan dari yang terkecil: 2, 8, 5, 0, 3.
+5 Suhu di kota A adalah 4°C dan di kota B adalah 2°C. Kota mana yang lebih dingin?
+6 Nyatakan dengan bilangan bulat: (a) 8°C di atas nol, (b) 5 meter di bawah permukaan laut, (c)
+lantai 2 di bawah tanah.
+7 Isilah dengan >, <, atau =: 12 21
+8 Tentukan lawan dari 7, 4, dan 0.
+L A N J U T
+9 Tentukan nilai |8| dan |5|.
+10 Urutkan dari yang terbesar: 7, 4, 1, 0, 10.
+11 Suhu kota P adalah 5°C, kota Q 0°C, dan kota R 9°C. Urutkan dari kota terdingin.
+TA N TA N GA N
+12 Tuliskan semua bilangan bulat yang terletak di antara 3 dan 2.
+13 Apakah bilangan bulat negatif terbesar?
+MK 2
+
+-- 7 of 34 --
+
+Rumah Bunda · Modul Matematika Bulan 12	8
+MK-p2
+PERTEMUAN
+2
+B U L A N 1 · B I L A N G A N B U L AT
+Penjumlahan dan
+pengurangan bilangan bulat
+T U J UA N P E M B E L A JA R A N
+Siswa mampu melakukan penjumlahan dan pengurangan bilangan bulat serta menerapkannya
+dalam soal cerita.
+Pemanasan 5 menit, dijawab lisan
+ 3  4  …
+ 9  5  …
+ Apa lawan dari 6?
+A Penjumlahan bilangan bulat
+Bayangkan seseorang berjalan di garis bilangan:
+Menambah bilangan positif berarti bergerak ke kanan.
+Menambah bilangan negatif berarti bergerak ke kiri.
+Tiga aturan penjumlahan
+ Tanda sama: jumlahkan angkanya, tanda tetap.
+4  3  7
+ Tanda berbeda: kurangkan angka yang besar dengan yang kecil, tanda mengikuti angka yang
+lebih besar.
+7  10  3 dan 4  9  5
+ Bilangan berlawanan: jumlahnya nol.
+8  8  0
+3 + 4 = 7
+Mulai dari 3, bergerak empat langkah ke kanan, sampai di 7.
+3 + (−5) = −2
+Mulai dari 3, bergerak lima langkah ke kiri, sampai di 2.
+4 	3 	2 	1 	0 	1 	2 	3 	4
+3 + (−5) = −2
+CONTOH
+
+-- 8 of 34 --
+
+9	Rumah Bunda · Modul Matematika Bulan 12
+B Pengurangan bilangan bulat
+Cara praktisnya: ubah pengurangan menjadi penjumlahan dengan lawan bilangan.
+a − b = a + (−b)
+Tiga langkah
+ Ubah tanda − menjadi +.
+ Ganti bilangan kedua dengan lawannya.
+ Hitung dengan aturan penjumlahan.
+Perhatikan bahwa mengurangi bilangan negatif sama dengan menambahkan bilangan positif.
+Awas, jebakan!
+3  5 hasilnya 2, bukan 8. Dua tanda minus berdampingan berubah menjadi plus.
+C Contoh soal cerita
+7 − 10 = 7 + (−10) = −3
+(−3) − (−5) = (−3) + 5 = 2
+4 − (−6) = 4 + 6 = 10
+CONTOH
+Suhu sebuah freezer mula-mula 2°C. Suhu kemudian turun 4°C. Berapa suhu akhirnya?
+Cara: “Turunˮ berarti menambah bilangan negatif.
+−2 + (−4) = −6
+Jadi, suhu akhirnya 6°C.
+CONTOH 1
+Sebuah lift berada di lantai 2 (dua lantai di bawah tanah), lalu naik 5 lantai. Di lantai berapa lift
+berhenti?
+−2 + 5 = 3
+Jadi, lift berhenti di lantai 3.
+CONTOH 2
+
+-- 9 of 34 --
+
+Rumah Bunda · Modul Matematika Bulan 12	10
+Rangkuman
+Tanda sama dijumlahkan, tanda berbeda dikurangkan.
+Mengurangi sama dengan menambah lawannya.
+Naik atau bertambah berarti ke kanan, turun atau berkurang berarti ke kiri.
+Latihan mandiri
+DASA R
+1 8  3  …
+2 5  6  …
+3 7  10  …
+4 6  11  …
+5 4  9  …
+6 12  5  …
+L A N J U T
+7 Lift berada di lantai 3, kemudian turun 7 lantai. Di lantai berapa lift berhenti jika lantai dasar
+dinyatakan 0?
+8 Seorang penyelam berada pada kedalaman 8 meter di bawah permukaan laut. Ia naik 3 meter.
+Nyatakan posisi akhirnya dengan bilangan bulat.
+9 9  1  …
+10 15  15  …
+11 12  5  …
+12 2  7  …
+13 0  6  …
+14 10  10  …
+
+-- 10 of 34 --
+
+11	Rumah Bunda · Modul Matematika Bulan 12
+15 Saldo Rina Rp15.000 (ia berutang). Kemudian ia menerima uang Rp40.000. Berapa saldonya
+sekarang?
+TA N TA N GA N
+16 Suhu pagi hari 3°C. Siang hari suhu naik 9°C, lalu malam hari turun 11°C dari suhu siang. Berapa
+suhu malam hari?
+17 5  8  2  6  …
+MK 3
+
+-- 11 of 34 --
+
+Rumah Bunda · Modul Matematika Bulan 12	12
+MK-p3
+PERTEMUAN
+3
+B U L A N 1 · B I L A N G A N B U L AT
+Perkalian, pembagian, dan
+evaluasi bilangan bulat
+T U J UA N P E M B E L A JA R A N
+Siswa mampu melakukan perkalian dan pembagian bilangan bulat, menyelesaikan operasi
+campuran sederhana, dan memecahkan soal cerita.
+Pemanasan 5 menit, dijawab lisan
+ 4  3  …
+ 20  5  …
+ 2  5  …
+A Aturan tanda perkalian dan pembagian
+Operasi 	Hasil
+Positif × positif 	Positif
+Positif × negatif 	Negatif
+Negatif × positif 	Negatif
+Negatif × negatif 	Positif
+Cara mudah mengingat
+Tanda sama menghasilkan positif. Tanda berbeda menghasilkan negatif.
+Aturan tanda yang sama berlaku pada pembagian, selama pembaginya bukan nol.
+Tentang nol
+Bilangan apa pun dikali 0 hasilnya 0.
+0 dibagi bilangan bukan nol hasilnya 0.
+Pembagian dengan 0 tidak dapat dilakukan.
+(−4) × 3 = −12
+(−5) × (−2) = 10
+24 ÷ (−6) = −4
+(−30) ÷ (−5) = 6
+CONTOH
+
+-- 12 of 34 --
+
+13	Rumah Bunda · Modul Matematika Bulan 12
+B Operasi hitung campuran
+Urutan mengerjakan
+ Kerjakan yang ada di dalam kurung.
+ Kerjakan perkalian dan pembagian, dari kiri ke kanan.
+ Terakhir kerjakan penjumlahan dan pengurangan, dari kiri ke kanan.
+6  2  4
+Langkah 1 Kerjakan perkalian.
+(−2) × 4 = −8
+Langkah 2 Kerjakan penjumlahan.
+6 + (−8) = −2
+Jadi, hasilnya 2.
+CONTOH 1
+3  5  4
+Langkah 1 Kurung dulu, 3  5  2.
+Langkah 2 2  4  8.
+Jadi, hasilnya 8.
+CONTOH 2
+20  4  3
+Langkah 1 20  4  5.
+Langkah 2 5  3  2.
+Jadi, hasilnya 2.
+CONTOH 3
+
+-- 13 of 34 --
+
+Rumah Bunda · Modul Matematika Bulan 12	14
+C Contoh soal cerita
+Rangkuman
+Tanda sama menghasilkan positif, tanda berbeda menghasilkan negatif.
+Urutan: kurung, kali dan bagi, lalu tambah dan kurang.
+Tidak ada pembagian dengan nol.
+Latihan mandiri
+DASA R
+1 3  7  …
+2 8  4  …
+3 5  9  …
+4 36  9  …
+5 48  6  …
+6 15  3  …
+7 7  0  …
+L A N J U T
+8 8  3  2  …
+9 4  10  3  …
+10 18  3  5  …
+Uang tabungan Dewi berkurang Rp5.000 setiap hari selama 4 hari. Berapa perubahan uang
+tabungannya?
+Cara: Berkurang Rp5.000 ditulis 5.000, dan terjadi 4 kali.
+4 × (−5.000) = −20.000
+Jadi, tabungan Dewi berkurang Rp20.000.
+CONTOH
+
+-- 14 of 34 --
+
+15	Rumah Bunda · Modul Matematika Bulan 12
+11 2  3  4  …
+12 Suhu awal 2°C. Suhu turun 3°C setiap jam selama 5 jam. Berapa suhu akhirnya?
+TA N TA N GA N
+13 6   42
+14 	÷ 5  9
+MK l1
+
+-- 15 of 34 --
+
+Rumah Bunda · Modul Matematika Bulan 12	16
+MK-eval1
+EVALUASI
+1
+A K H I R B U L A N 1
+Evaluasi Bulan 1
+Nama: 	Tanggal: 	Nilai: 	/ 100
+Kerjakan semua soal sendiri tanpa bantuan. Setiap soal bernilai 10.
+1 Urutkan dari yang terkecil: 3, 5, 0, 1, 6.
+2 8  13  …
+3 7  4  …
+4 6  5  …
+5 42  7  …
+6 10  3  4  …
+7 Suhu awal 3°C, kemudian naik 8°C. Berapa suhu akhirnya?
+8 Sebuah bilangan dikalikan 4 menghasilkan 28. Berapa bilangan tersebut?
+9 5  7  3  …
+10 Sebuah kapal selam berada di kedalaman 120 meter di bawah permukaan laut. Kapal turun 3 kali,
+setiap kali 15 meter. Nyatakan posisi akhirnya dengan bilangan bulat.
+Cara membaca hasil
+80100 lanjut ke aljabar.
+6079 ulangi bagian yang salah di awal pertemuan berikutnya.
+Di bawah 60 ulangi konsep dasar (garis bilangan dan aturan tanda) sebelum menambah
+materi.
+
+-- 16 of 34 --
+
+MK-bulan2
+B U L A N 2
+Aljabar
+4
+Mengenal bentuk aljabar
+5
+Menyederhanakan bentuk aljabar
+6
+Penerapan aljabar dan evaluasi
+✓ Evaluasi Bulan 2
+Siswa mampu mengenali variabel, koefisien, konstanta, suku, dan
+menuliskan bentuk aljabar dari situasi sederhana.
+Siswa mampu mengenali suku sejenis dan menyederhanakan bentuk
+aljabar menggunakan operasi hitung.
+Siswa mampu menggunakan bentuk aljabar dalam masalah sehari-hari
+dan menyelesaikan evaluasi materi bulan kedua.
+10 soal untuk mengukur pemahaman satu bulan penuh.
+
+-- 17 of 34 --
+
+Rumah Bunda · Modul Matematika Bulan 12	18
+MK-p4
+PERTEMUAN
+4
+B U L A N 2 · A L J A B A R
+Mengenal bentuk aljabar
+T U J UA N P E M B E L A JA R A N
+Siswa mampu mengenali variabel, koefisien, konstanta, suku, dan menuliskan bentuk aljabar dari
+situasi sederhana.
+Pemanasan 5 menit, dijawab lisan
+ Satu pensil Rp2.000. Berapa harga 5 pensil?
+ Jika harga satu pensil belum diketahui dan kita sebut x, berapa harga 5 pensil?
+ Ada 8 kelereng, ditambah 3 kelereng lagi. Berapa semuanya?
+A Apa itu aljabar?
+Aljabar adalah cara menyatakan suatu nilai atau hubungan matematika menggunakan angka, simbol
+operasi, dan huruf yang mewakili bilangan.
+Mengapa memakai huruf?
+Dengan huruf, satu rumus dapat dipakai untuk banyak situasi. Harga pensil bisa Rp2.000 atau
+Rp3.500, tetapi bentuk 3x tetap sama.
+B Unsur-unsur bentuk aljabar
+Perhatikan bentuk berikut.
+5x + 3
+5
+Koefisien
+Angka yang mengalikan
+variabel.
+x
+Variabel
+Huruf pengganti bilangan yang
+nilainya belum diketahui atau
+bisa berubah.
++ 3
+Konstanta
+Bilangan tetap tanpa variabel.
+Di sini 3 adalah konstanta.
+Harga sebuah pensil adalah x rupiah. Jika seseorang membeli 3 pensil, total harganya:
+3 × x = 3x
+Huruf x disebut variabel karena nilainya belum ditentukan. Tanda kali antara angka dan huruf
+boleh dihilangkan.
+CONTOH
+
+-- 18 of 34 --
+
+19	Rumah Bunda · Modul Matematika Bulan 12
+Suku adalah bagian bentuk aljabar yang dipisahkan oleh tanda tambah atau kurang.
+Dua catatan kecil
+Jika tidak ada angka di depan huruf, koefisiennya 1. Jadi x sama dengan 1x.
+Tanda di depan suku ikut menjadi bagian suku. Pada 9  2x, koefisien x adalah 2.
+C Menuliskan kalimat menjadi bentuk aljabar
+Kalimat 	Bentuk aljabar
+Suatu bilangan ditambah 5 	x  5
+Dua kali suatu bilangan 	2x
+Suatu bilangan dikurangi 7 	x  7
+Tiga kali suatu bilangan ditambah 4 	3x  4
+Jumlah bilangan x dan y 	x + y
+Suatu bilangan dibagi 2 x
+2
+Dua kali suatu bilangan dikurangi 3 	2x  3
+Rangkuman
+Variabel adalah huruf pengganti bilangan yang belum diketahui.
+Koefisien mengalikan variabel, konstanta berdiri sendiri.
+Suku dipisahkan oleh tanda + atau −.
+Latihan mandiri
+DASA R
+1 Tentukan variabel, koefisien, dan konstanta dari 7x  5.
+4x  2 memiliki dua suku, yaitu 4x dan 2.
+3a  2b  5 memiliki tiga suku, yaitu 3a, 2b, dan 5.
+CONTOH
+Rina mempunyai x buah buku. Ia membeli 4 buku lagi. Berapa banyak buku Rina sekarang?
+x + 4
+Jika awalnya Rina memiliki 6 buku, maka jumlah akhirnya 6  4  10 buku.
+CONTOH SOAL
+
+-- 19 of 34 --
+
+Rumah Bunda · Modul Matematika Bulan 12	20
+2 Berapa banyak suku pada 3a  2b  8?
+3 Tuliskan bentuk aljabar dari lima kali bilangan x.
+4 Tuliskan bentuk aljabar dari suatu bilangan dikurangi 9.
+5 Budi memiliki x kelereng dan mendapat 7 kelereng lagi. Tuliskan bentuk aljabarnya.
+6 Tentukan koefisien y pada bentuk 4y  3.
+L A N J U T
+7 Berapa banyak suku pada 2x  5y  3z  4?
+8 Tentukan koefisien b pada 3a  6b  1.
+9 Tuliskan bentuk aljabar dari suatu bilangan dikalikan 3, kemudian dikurangi 2.
+10 Harga satu buku adalah y rupiah. Tuliskan bentuk aljabar untuk harga 6 buku.
+11 Andi memiliki p kue. Ia memberikan 3 kue kepada adiknya. Tuliskan bentuk aljabar untuk sisa kue
+Andi.
+12 Tuliskan kalimat yang sesuai dengan bentuk 2x  1.
+TA N TA N GA N
+13 Umur Dika adalah d tahun. Umur kakaknya 3 tahun lebih tua dari dua kali umur Dika. Tuliskan
+bentuk aljabar umur kakak.
+14 Pada bentuk 9  2x, apakah koefisien x bernilai 2 atau 2? Jelaskan.
+MK 5
+
+-- 20 of 34 --
+
+21	Rumah Bunda · Modul Matematika Bulan 12
+MK-p5
+PERTEMUAN
+5
+B U L A N 2 · A L J A B A R
+Menyederhanakan bentuk aljabar
+T U J UA N P E M B E L A JA R A N
+Siswa mampu mengenali suku sejenis dan menyederhanakan bentuk aljabar menggunakan
+operasi hitung.
+Pemanasan 5 menit, dijawab lisan
+ 3 apel  5 apel = … apel
+ 9 jeruk  4 jeruk = … jeruk
+ 2  3  4  …
+A Suku sejenis dan tidak sejenis
+Suku sejenis adalah suku yang mempunyai variabel dan pangkat variabel yang sama.
+Pakai logika buah
+3 apel  5 apel  8 apel. Tetapi 3 apel  3 jeruk tidak bisa dijadikan 6 apel atau 6 jeruk. Hanya
+yang sejenis yang boleh digabung.
+Pasangan suku 	Sejenis?
+3x dan 5x 	Ya
+2a dan 7a 	Ya
+3x dan 3y 	Tidak, variabelnya berbeda
+2x dan 2x² 	Tidak, pangkatnya berbeda
+B Penjumlahan bentuk aljabar
+Suku sejenis dijumlahkan dengan menjumlahkan koefisiennya.
+3x + 5x = (3 + 5)x = 8x
+Awas, jebakan!
+4a  2a  7 bukan 13a. Angka 7 tidak punya huruf a, jadi tetap berdiri sendiri.
+4a + 2a + 7 = 6a + 7
+Konstanta 7 tidak dapat digabungkan dengan 6a, karena tidak sejenis.
+CONTOH
+
+-- 21 of 34 --
+
+Rumah Bunda · Modul Matematika Bulan 12	22
+C Pengurangan bentuk aljabar
+Kurangkan koefisien pada suku sejenis.
+9x − 4x = 5x
+Tiga langkah menyederhanakan
+ Tandai suku-suku yang sejenis (sertakan tanda di depannya).
+ Kelompokkan suku sejenis.
+ Hitung koefisiennya.
+D Perkalian bentuk aljabar
+Gunakan sifat distributif: kalikan bilangan di luar kurung dengan setiap suku di dalam kurung.
+3(x + 4) = 3x + 12
+Awas, jebakan!
+3x  4 bukan 3x  4. Angka 3 harus mengalikan kedua suku di dalam kurung.
+E Pembagian bentuk aljabar sederhana
+Jika semua suku dapat dibagi oleh bilangan yang sama, bagikan setiap suku tersebut.
+7a  5  2a  3
+Kelompokkan suku sejenis:
+(7a − 2a) + (5 − 3) = 5a + 2
+Jadi, bentuk sederhananya 5a  2.
+CONTOH
+3x  2y  5x − y
+(3x + 5x) + (2y − y) = 8x + y
+Ingat, −y sama dengan 1y, jadi 2y − y  1y = y.
+CONTOH DENGAN DUA VARIABEL
+2(3x − 5) = 6x − 10
+−2(x + 3) = −2x − 6
+CONTOH
+
+-- 22 of 34 --
+
+23	Rumah Bunda · Modul Matematika Bulan 12
+8x + 12
+4 = 2x + 3
+Rangkuman
+Hanya suku sejenis yang boleh digabung.
+Penjumlahan dan pengurangan: hitung koefisiennya saja.
+Perkalian dan pembagian dengan bilangan: berlaku untuk setiap suku.
+Latihan mandiri
+DASA R
+1 4x  6x
+2 9a  3a
+3 5x  2  3x  4
+4 7y  5  2y  1
+5 3a  2
+6 42x  3
+7 12x  8  4
+8 3x  2y  5x − y
+L A N J U T
+9 6a  2b  3a  5b
+10 12m  5m  4  1
+11 5x  3
+12 24y  1
+6a − 9
+3 = 2a − 3
+CONTOH
+
+-- 23 of 34 --
+
+Rumah Bunda · Modul Matematika Bulan 12	24
+13 15a  10  5
+14 4x  7  x  2
+15 2x  3
+TA N TA N GA N
+16 2x  4  3x  5
+17 Sebuah persegi panjang memiliki panjang 3x  2 cm dan lebar x cm. Tuliskan keliling persegi
+panjang dalam bentuk paling sederhana.
+MK 6
+
+-- 24 of 34 --
+
+25	Rumah Bunda · Modul Matematika Bulan 12
+MK-p6
+PERTEMUAN
+6
+B U L A N 2 · A L J A B A R
+Penerapan aljabar dan evaluasi
+T U J UA N P E M B E L A JA R A N
+Siswa mampu menggunakan bentuk aljabar dalam masalah sehari-hari dan menyelesaikan
+evaluasi materi bulan kedua.
+Pemanasan 5 menit, dijawab lisan
+ Jika x  3, berapa 2x?
+ Jika x  4, berapa x  5?
+ Sederhanakan 3x + x.
+A Menghitung nilai bentuk aljabar
+Tips substitusi
+Saat mengganti huruf dengan bilangan negatif, selalu pakai kurung, misalnya 32, agar tanda
+tidak tertukar.
+Jika x  4, tentukan nilai 3x  5.
+Langkah 1 Ganti x dengan 4.
+3(4) + 5
+Langkah 2 Hitung perkalian, lalu penjumlahan.
+12 + 5 = 17
+Jadi, nilai 3x  5 adalah 17.
+CONTOH 1
+Jika a  3 dan b  2, hitung 2a  4b.
+2(3) + 4(2) = 6 + 8 = 14
+CONTOH 2
+Jika x = 2, hitung 3x  5.
+3(−2) + 5 = −6 + 5 = −1
+CONTOH 3 (DENGAN BILANGAN NEGATIF)
+
+-- 25 of 34 --
+
+Rumah Bunda · Modul Matematika Bulan 12	26
+B Soal cerita
+Langkah menyelesaikan soal cerita
+ Baca soal, tentukan apa yang belum diketahui, lalu beri huruf.
+ Tulis bentuk aljabarnya.
+ Ganti huruf dengan nilai yang diketahui.
+ Hitung, lalu tulis jawaban lengkap dengan satuannya.
+Rangkuman
+Substitusi: ganti huruf dengan bilangan, lalu hitung sesuai urutan operasi.
+Bilangan negatif ditulis dalam kurung saat substitusi.
+Soal cerita: tulis bentuk aljabar dulu, baru substitusi.
+Latihan mandiri
+DASA R
+1 Jika x  6, hitung 4x  1.
+2 Jika a  5 dan b  2, hitung 3a − b.
+3 Jika x  3, hitung 2x  4.
+Satu tiket masuk tempat bermain berharga Rp10.000. Jika harga tiket dinyatakan dengan x,
+berapa biaya untuk membeli 4 tiket?
+Bentuk aljabarnya:
+4x
+Jika x  Rp10.000, maka:
+4 × Rp10.000 = Rp40.000
+CONTOH 1
+Tarif taksi Rp5.000 ditambah Rp2.000 untuk setiap kilometer. Tuliskan biaya untuk menempuh
+k kilometer, lalu hitung biayanya untuk 6 km.
+5.000 + 2.000k
+5.000 + 2.000(6) = 5.000 + 12.000 = 17.000
+Jadi, biayanya Rp17.000.
+CONTOH 2
+
+-- 26 of 34 --
+
+27	Rumah Bunda · Modul Matematika Bulan 12
+4 Jika y = 3, hitung 2y  9.
+L A N J U T
+5 Jika p = 2 dan q  5, hitung 3p  2q.
+6 Harga satu pensil p rupiah. Ibu membeli 5 pensil dan 1 penghapus seharga Rp1.500. Tuliskan
+bentuk aljabar total belanja, lalu hitung jika p  2.000.
+7 Tarif ojek Rp4.000 ditambah Rp3.000 tiap kilometer. Tuliskan biaya untuk k kilometer, lalu hitung
+biaya 5 km.
+TA N TA N GA N
+8 Sederhanakan 3x  2  2x  1, lalu hitung nilainya jika x  2.
+9 Dika menabung x rupiah setiap minggu selama 8 minggu, lalu mengambil Rp20.000. Tuliskan
+bentuk aljabar sisa tabungannya, lalu hitung jika x  10.000.
+MK l2
+
+-- 27 of 34 --
+
+Rumah Bunda · Modul Matematika Bulan 12	28
+MK-eval2
+EVALUASI
+2
+A K H I R B U L A N 2
+Evaluasi Bulan 2
+Nama: 	Tanggal: 	Nilai: 	/ 100
+Kerjakan semua soal sendiri tanpa bantuan. Setiap soal bernilai 10.
+1 Tentukan variabel dan koefisien dari 8x  6.
+2 Berapa banyak suku pada 5a  3b  2?
+3 Sederhanakan 6x  4x.
+4 Sederhanakan 8a  3a  2.
+5 Sederhanakan 4x  3  2x  5.
+6 Hitung 5y  2.
+7 Hitung 32x  4.
+8 Jika x  5, hitung nilai 2x  7.
+9 Jika a  4 dan b  3, hitung 2a  3b.
+10 Dina memiliki x stiker. Ia membeli 3 paket stiker, setiap paket berisi 5 stiker. Tuliskan bentuk
+aljabar untuk jumlah stiker Dina sekarang.
+Cara membaca hasil
+80100 siap lanjut ke materi berikutnya.
+6079 ulangi bagian yang salah di awal pertemuan berikutnya.
+Di bawah 60 ulangi suku sejenis dan sifat distributif sebelum menambah materi.
+MK k i
+
+-- 28 of 34 --
+
+29	Rumah Bunda · Modul Matematika Bulan 12
+MK-kunci
+U N T U K P E N G A J A R
+Kunci jawaban
+Gunakan setelah siswa mengerjakan soal sendiri. Nomor sama dengan nomor soal.
+Pertemuan 1 · Mengenal bilangan bulat
+PEMANASAN
+ 6
+ 8
+ Jawaban bervariasi, misalnya 1.
+LATIHAN MANDIRI
+ Jawaban bervariasi, misalnya 1, 2, 3.
+ 4  1, karena 4 berada di kiri 1.
+ 3  5
+ 8, 3, 0, 2, 5
+ Kota A, karena 4  2.
+ (a) 8, (b) 5, (c) 2
+ 12  21, karena 12 berada di kanan 21.
+ 7, 4, dan 0
+ 8 dan 5
+ 4, 0, 1, 7, 10
+ R 9°C, P 5°C, Q 0°C
+ 2, 1, 0, 1
+ 1, karena paling dekat dengan 0 di sisi kiri.
+Pertemuan 2 · Penjumlahan dan pengurangan bilangan bulat
+PEMANASAN
+ 7
+ 4
+ 6
+LATIHAN MANDIRI
+ 5
+ 11
+ 3
+ 6  11  5
+ 4  9  5
+ 12  5  17
+ 3  7  4. Lift berhenti di lantai 4, yaitu 4
+lantai di bawah tanah.
+ 8  3  5. Posisinya 5 5 meter di
+bawah permukaan laut).
+ 10
+ 0
+ 7
+ 2  7  9
+ 0  6  6
+ 10  10  0
+ 15.000  40.000  25.000. Saldonya
+Rp25.000.
+ 3  9  6, lalu 6  11  5. Suhu malam
+hari 5°C.
+ 5  8  3; 3  2  1; 1  6  7
+Pertemuan 3 · Perkalian, pembagian, dan evaluasi bilangan bulat
+PEMANASAN
+ 12 	 4
+
+-- 29 of 34 --
+
+Rumah Bunda · Modul Matematika Bulan 12	30
+ 7
+LATIHAN MANDIRI
+ 21
+ 32
+ 45
+ 4
+ 8
+ 5
+ 0
+ 3  2  6, lalu 8  6  2
+ 4  10  6, lalu 6  3  18
+ 18  3  6, lalu 6  5  11
+ 2  3  6, lalu 6  4  24
+ 2  5  3  2  15  13. Suhu akhirnya
+13°C.
+ 7, karena 42  6  7
+ 45, karena 9  5  45
+Evaluasi Bulan 1
+SOAL EVALUASI
+ 5, 1, 0, 3, 6
+ 5
+ 7  4  11
+ 30
+ 6
+ 10  12  2
+ 3  8  5. Suhu akhirnya 5°C.
+ 28  4  7
+ 5  7  12, lalu 12  3  9
+ 120  3  15  120  45  165.
+Posisinya 165 165 meter di bawah
+permukaan laut).
+Pertemuan 4 · Mengenal bentuk aljabar
+PEMANASAN
+ Rp10.000
+ 5x
+ 11
+LATIHAN MANDIRI
+ Variabel x, koefisien 7, konstanta 5.
+ 3 suku, yaitu 3a, 2b, dan 8.
+ 5x
+ x  9
+ x  7
+ 4
+ 4 suku
+ 6
+ 3x  2
+ 6y
+ p  3
+ Dua kali suatu bilangan ditambah 1. Kalimat
+lain yang setara juga benar.)
+ 2d  3
+ 2, karena tanda minus di depan suku 2x
+ikut menjadi bagian suku.
+Pertemuan 5 · Menyederhanakan bentuk aljabar
+
+-- 30 of 34 --
+
+31	Rumah Bunda · Modul Matematika Bulan 12
+PEMANASAN
+ 8
+ 5
+ 14
+LATIHAN MANDIRI
+ 10x
+ 6a
+ 5x  3x) + 2  4  8x  6
+ 7y  2y) + 5  1  5y  4
+ 3a  6
+ 8x  12
+ 3x  2
+ 8x + y
+ 9a  7b
+ 7m  3
+ 5x  15
+ 8y  2
+ 3a  2
+ 4x − x) + 7  2  3x  5
+ 2x  6
+ 2x  8  3x  5  5x  3
+ K  2p + l)  23x  2  x)  24x  2  8x
+ 4. Kelilingnya 8x  4 cm.
+Pertemuan 6 · Penerapan aljabar dan evaluasi
+PEMANASAN
+ 6
+ 9
+ 4x
+LATIHAN MANDIRI
+ 46  1  24  1  25
+ 35  2  15  2  13
+ 23  4  27  14
+ 23  9  6  9  3
+ 32  25  6  10  4
+ 5p  1.500. Untuk p  2.000 52.000 
+1.500  10.000  1.500  Rp11.500.
+ 4.000  3.000k. Untuk k  5 4.000 
+15.000  Rp19.000.
+ Sederhana: 5x  1. Untuk x  2 52  1 
+11.
+ 8x  20.000. Untuk x  10.000 80.000 
+20.000  Rp60.000.
+Evaluasi Bulan 2
+SOAL EVALUASI
+ Variabel x, koefisien 8.
+ 3 suku
+ 10x
+ 5a  2
+ 6x  8
+ 5y  10
+ 6x  12
+ 25  7  10  7  17
+ 24  33  8  9  17
+ x  3  5  x  15
+MK
+
+-- 31 of 34 --
+
+Rumah Bunda · Modul Matematika Bulan 12	32
+MK-saran
+Saran pelaksanaan les
+Sebelum les
+Siapkan papan tulis, lembar latihan, dan
+beberapa soal pemanasan.
+Saat les
+Berikan contoh terlebih dahulu, kemudian
+ajak siswa mengerjakan soal serupa.
+Akhir les
+Berikan 5 soal singkat untuk mengukur
+pemahaman.
+Pekerjaan rumah
+Berikan 510 soal sejenis dari bagian Lanjut
+dan Tantangan pada pertemuan itu.
+Evaluasi bulanan
+Jika siswa masih kesulitan pada konsep
+dasar, gunakan sebagian waktu pertemuan
+berikutnya untuk mengulang, bukan langsung
+menambah materi.
+
+-- 32 of 34 --
+
+
+
+-- 33 of 34 --
+
+Rumah BundaL E S & B I M B I N GA N B E L A JA R
+Modul Matematika · Bulan 1 dan 2
+
+-- 34 of 34 --
+

@@ -1,0 +1,2236 @@
+KEMENTERIAN
+PENDIDIKAN
+DAN
+KEBUDAYAAN
+BADAN
+PENELITIAN
+DAN PENGEMBANGAN
+DAN
+PERBUKUAN
+PUSAT
+KURIKULUM DAN
+PERBUKUAN
+Matematika
+Sekolah Menengah	
+Pertama
+Kelas
+VII
+
+-- 1 of 320 --
+
+Hak
+Cipta
+pada
+Kementerian
+Pendidikan
+dan
+Kebudayaan
+Republik
+Indonesia.
+Dilindungi
+Undang-Undang.
+Disclaimer:
+Buku
+ini
+disiapkan
+oleh Pemerintah
+dalam
+rangka
+pemenuhan
+kebutuhan
+buku
+pen-
+didikan
+yang
+bermutu,
+murah,
+dan
+merata
+sesuai
+dengan
+amanat
+dalam
+UU
+No.
+3
+Tahun
+2017.
+Buku
+ini
+disusun
+dan
+ditelaah
+oleh
+berbagai
+pihak
+di
+bawah
+koordinasi
+Kementerian
+Pendidikan
+dan
+Kebudayaan.
+Buku
+ini
+merupakan
+dokumen
+hidup
+yang
+senantiasa
+diperbaiki,
+diperbarui,
+dan
+dimutakhirkan
+sesuai
+dengan
+dinamika kebutuhan dan
+perubahan
+zaman.
+Masukan
+dari
+berbagai
+kalangan
+yang
+dialamatkan
+kepada
+penulis
+atau
+melalui
+alamat
+surel
+buku@kemdikbud.go.id
+di-
+harapkan
+dapat
+meningkatkan
+kualitas
+buku
+ini.
+Matematika
+untuk
+Sekolah
+Menengah Pertama
+Kelas
+VII
+Judul
+Asli:
+Mathematics
+for
+Junior High School
+1st
+Level
+Penulis
+Tim Gakko
+Tosho
+Penyadur
+Sugiman,
+Achmad Dhany
+Fachrudin
+Penelaah
+Budi
+Poniam
+Penyunting
+Zulkardi,
+Lambas,
+Yudi
+Satria,
+Fristalina
+Penyelia
+Pusat
+Perbukuan dan
+Kurikulum
+Penata
+Letak
+(Desainer)
+Dewi
+Pratiwi
+Desain
+Kover
+Kuncoro
+Dewojati,
+Febriyanto
+Agung
+Dwi
+Cahyo
+Ilustrator
+Suhananto,
+Imam
+Kr
+Moncol
+Fotografer
+Selamet,
+Heru
+Setyono,
+Denny
+Saputra,
+Dewi
+Pratiwi
+Penerbit
+Pusat Kurikulum dan Perbukuan
+Badan
+Penelitian
+dan
+Pengembangan
+dan
+Perbukuan
+Kementerian
+Pendidikan
+dan
+Kebudayaan
+Jalan
+Gunung
+Sahari
+Raya No.
+4,
+Jakarta
+Pusat
+Cetakan Kedua, 2021
+ISBN
+978-602-244-514-2
+(no.jil.lengkap)
+ISBN
+978-602-244-515-9
+(jil.1)
+Isi
+buku
+ini
+menggunakan huruf
+Myriad
+Pro,
+Minion
+Pro,
+Arial,
+Arial
+Unicode, Tempus
+Sans
+ITC,
+Symbol,
+Cambria
+Math,
+7/14
+pt
+vi,
+314
+hlm.: 18,2
+x
+25,7
+cm.
+
+-- 2 of 320 --
+
+Kata	
+Pengantar
+Pusat
+Kurikulum
+dan
+Perbukuan,
+Badan
+Penelitian	
+dan
+Pengembangan	
+dan
+Perbukuan, Kementerian Pendidikan dan	
+Kebudayaan
+mempunyai
+tugas
+penyiapan
+kebijakan
+teknis,
+pelaksanaan,	
+pemantauan,
+evaluasi,	
+dan
+pelaporan
+pelaksanaan
+pengembangan kurikulum
+serta
+pengembangan,
+pembinaan,	
+dan
+pengawasan
+sistem
+perbukuan.
+Pada
+tahun
+2020,
+Pusat
+Kurikulum
+dan
+Perbukuan
+mengembangkan
+kurikulum
+beserta
+buku
+teks
+pelajaran
+(buku teks utama)
+yang
+mengusung
+semangat
+merdeka
+belajar.
+Adapun
+kebijakan
+pengembangan
+kurikulum
+ini
+tertuang
+dalam
+Keputusan
+Menteri
+Pendidikan
+dan
+Kebudayaan
+Republik
+Indonesia
+Nomor
+958/P/2020 tentang Capaian
+Pembelajaran
+pada
+Pendidikan
+Anak
+Usia
+Dini,
+Pendidikan
+Dasar,
+dan
+Pendidikan Menengah.
+Kurikulum
+ini
+memberikan
+keleluasaan
+bagi
+satuan
+pendidikan
+dan
+pendidik
+untuk
+mengembangkan
+potensinya
+serta
+keleluasaan
+bagi
+peserta
+didik
+untuk
+belajar
+sesuai
+dengan
+kemampuan
+dan
+perkembangannya.
+Pada
+tahun
+2021,
+kurikulum
+ini
+akan
+diimplementasikan
+secara
+terbatas
+di	
+Sekolah
+Penggerak.
+Begitu
+pula
+dengan
+buku
+teks
+pelajaran
+sebagai
+salah
+satu bahan
+ajar
+yang
+akan
+diimplementasikan
+secara
+terbatas
+di
+Sekolah
+Penggerak.
+Untuk
+mendukung
+pelaksanaan
+Kurikulum
+serta
+penyediaan
+buku
+teks
+pelajaran
+tersebut,
+salah
+satunya
+dengan
+melakukan	
+penerjemahan
+dan
+penyaduran
+Buku Matematika
+untuk Sekolah
+Menengah
+Pertama
+dari
+buku
+asli
+berjudul
+Mathematics for
+Junior
+High
+School
+yang
+disusun
+dan
+diterbitkan
+oleh
+Gakko
+Tosho
+Co.,
+Ltd..
+Buku
+Matematika
+ini
+diharapkan
+mampu
+menjadi
+salah
+satu
+bahan
+ajar
+untuk
+mendukung
+pembelajaran
+pada satuan
+pendidikan di
+Indonesia.
+Umpan
+balik
+dari
+pendidik,
+peserta
+didik,
+orang
+tua,
+dan
+masyarakat
+khususnya
+di Sekolah Penggerak
+sangat diharapkan untuk
+perbaikan
+dan
+penyempurnaan
+kurikulum
+dan
+buku
+teks
+pelajaran
+ini.
+Selanjutnya,
+Pusat
+Kurikulum
+dan Perbukuan mengucapkan
+terima
+kasih
+kepada seluruh 	pihak	
+yang	
+terlibat
+dalam
+penyusunan
+buku
+ini
+mulai
+dari
+Penerjemah, Penyadur,
+Penelaah, Penyunting,	
+llustrator,
+Desainer,
+dan
+pihak
+terkait 	lainnya
+yang
+tidak
+dapat
+disebutkan satu
+per
+satu.
+Semoga
+buku
+ini
+dapat
+bermanfaat untuk
+meningkatkan
+mutu
+pembelajaran.
+Jakarta,
+Februari
+2021
+Kepala
+Pusat Kurikulum dan
+Perbukuan,
+Maman
+Fathurrohman,
+S.Pd.Si., M.Si.,
+Ph.D.
+NIP.
+19820925 200604
+1
+001
+
+-- 3 of 320 --
+
+Prakata
+Seri
+"Matematika
+untuk
+Sekolah
+Menengah
+Pertama"
+yang
+diterbitkan
+GAKKO
+TOSHO.
+Co.LTD,
+Tokyo-Japan bertujuan
+untuk
+mengembangkan
+siswa
+belajar
+matematika
+oleh
+dan
+untuk
+diri
+mereka
+sendiri
+dengan
+pemahaman
+yang
+komprehensif,
+apresiasi,
+dan
+perluasan lebih
+lanjut
+dalam
+penerapan
+matematika.
+Penemuan
+matematika
+adalah
+harta
+berharga
+matematikawan
+dan
+kadang-kadang
+aktivitas heuristik
+seperti
+itu
+dianggap
+bukan
+masalah
+belajar
+siswa
+di
+kelas,
+karena
+seseorang percaya
+bahwa
+hanya orang-
+orang
+hebat
+yang
+dapat
+menemukannya.
+Seri
+buku
+teks
+ini
+memberikan terobosan
+untuk
+kesalahpahaman
+anggapan
+ini
+dengan
+menunjukkan
+kepada
+siswa
+untuk
+memahami
+konten
+pembelajaran
+baru
+dengan
+menggunakan
+matematika
+yang
+telah
+dipelajari
+sebelumnya.
+Untuk
+tujuan
+ini,
+buku-buku
+pelajaran
+dipersiapkan
+untuk
+pembelajaran
+di
+masa
+depan
+serta
+merenungkan
+dan
+menghargai
+apa yang
+dipelajari
+siswa
+sebelumnya.
+Pada
+buku
+teks
+ini,
+setiap
+bab
+memberi
+dasar
+yang
+diperlukan
+untuk
+pembelajaran
+kemudian. Pada
+setiap
+kali belajar,
+jika
+siswa
+belajar
+matematika
+secara
+berurutan,
+mereka
+dapat
+membayangkan beberapa
+ide
+untuk
+tugas/masalah
+baru
+yang
+tidak
+diketahui
+berdasarkan
+apa
+yang
+telah
+mereka
+pelajari.
+Jika
+siswa
+mengikuti
+urutan buku
+ini,
+mereka
+dapat menyelesaikan
+tugas/masalah
+yang
+tidak
+diketahui
+sebelumnya,
+dan
+menghargai
+temuan
+baru,
+temuan
+dengan
+menggunakan
+apa yang
+telah
+mereka
+pelajari.
+Dalam
+hal
+jika
+siswa
+merasa
+kesulitan
+untuk
+memahami
+konten
+pembelajaran
+saat
+ini
+di
+buku
+teks, itu
+berarti
+bahwa
+mereka
+kehilangan
+beberapa
+ide
+kunci
+yang
+terdapat
+dalam
+bab
+dan/atau
+kelas
+sebelumnya. Jika
+siswa
+meninjau
+isi
+pembelajaran
+yang
+ditunjukkan
+dalam
+beberapa
+halaman
+di
+buku
+teks
+sebelum
+belajar,
+itu
+memberi
+mereka
+dasar
+yang
+diperlukan
+untuk
+membuat
+belajar
+lebih
+mudah.
+Jika
+guru
+hanya
+membaca
+halaman
+atau
+tugas
+untuk
+mempersiapkan
+pembelajaran
+esok
+hari,
+mungkin
+akan
+salah
+memahami
+dan
+menyalahi
+penggunaan
+buku
+teks
+ini
+karena
+tidak
+menyampaikan
+sifat
+dasar
+buku
+teks
+ini
+yang
+menyediakan
+urutan untuk
+memberi
+pemahaman
+di
+halaman
+atau
+kelas sebelumnya.
+"Matematika
+untuk
+Sekolah
+Menengah Pertama" menyediakan komunikasi
+kelas
+yang
+kaya
+di
+antara
+siswa.
+Memahami orang
+lain
+tidak
+hanya
+isi
+pembelajaran
+matematika
+dan
+pemikiran	
+logis,
+tetapi
+juga
+konten
+yang
+diperlukan
+untuk
+pembentukan
+karakter
+manusia.
+Matematika
+adalah
+kompetensi
+yang
+diperlukan
+untuk
+berbagi
+gagasan
+dalam
+kehidupan
+kita
+di
+Era
+Digital
+AI
+ini.
+"Bangun
+argumen
+yang
+layak
+dan
+kritik
+nalar
+orang
+lain
+(CCSS.MP3,
+2010)"
+tidak
+hanya
+tujuan di
+AS,
+tetapi
+juga
+menunjukkan
+kompetensi
+yang
+diperlukan
+untuk
+komunikasi matematika
+di
+era
+ini.
+Editor
+percaya
+bahwa
+buku
+teks
+yang
+diurutkan
+dengan
+baik
+ini
+memberikan
+kesempatan untuk
+komunikasi
+yang
+kaya
+di
+kelas
+pembelajaran
+matematika
+di
+antara
+siswa.
+November, 2019
+Prof.
+Masami
+Isoda
+Director
+of Centre for Research
+on
+International
+Cooperation in
+Educational Development
+(CRICED)
+University
+of
+Tsukuba,
+Japan
+iv
+
+-- 4 of 320 --
+
+Takakazu	
+Seki
+Takakazu
+Seki
+Sekitar
+tahun
+1640-1708
+Takakazu
+Seki
+adalah
+seorang
+matematikawan
+Jepang
+yang
+menemukan
+pengembangan
+sistem
+notasi
+simbolis
+Jepang
+menggunakan
+batang
+penghitungan
+papan
+dengan
+mengindeks
+variabel
+yang
+tidak
+diketahui
+dan
+menghitung
+nilai
+pi
+ke dalam
+jumlah
+digit
+terpanjang
+selama
+era
+itu.
+la
+dihormati
+oleh
+banyak
+matematikawan
+Jepang
+di
+luar
+sekolahnya
+setelah
+kematiannya.
+Monumen
+Takakazu
+Seki
+Sumber:
+commons.
+wikimedia.org
+00
+つ
+Papan
+Buletin
+Matematika
+di
+Kuil
+Sangaku
+Sumber:
+en.wikipedia.org
+Sumber:
+ndl.go.jp
+一第一十三鉄百十二月
+軍
+外露类之無
+
+-- 5 of 320 --
+
+Lapangan
+basket
+Sumber:
+Dokumen
+Puskurbuk
+Berbagai
+Bentuk
+Bangun	
+di
+Sekitar
+Kita
+Kita
+dapat
+menjelajahi
+berbagai
+bentuk
+bangunan
+di
+sekitar
+kita
+ketika
+kita
+mencoba
+mengetahui
+jumlah,
+bentuk, permukaan,
+dan
+jenis-jenis
+bangun
+tersebut.
+Teras
+hotel
+Sumber:
+Dokumen
+Puskurbuk
+vi
+Sumber:
+Dokumen
+Puskurbuk
+A 
+Sumber:
+Dokumen
+Puskurbuk
+
+-- 6 of 320 --
+
+וד
+Sumber:
+Dokumen
+Puskurbuk
+Sumber:
+Dokumen
+Puskurbuk 
+1
+
+-- 7 of 320 --
+
+
+
+-- 8 of 320 --
+
+
+
+-- 9 of 320 --
+
+
+
+-- 10 of 320 --
+
+
+
+-- 11 of 320 --
+
+
+
+-- 12 of 320 --
+
+
+
+-- 13 of 320 --
+
+
+
+-- 14 of 320 --
+
+
+
+-- 15 of 320 --
+
+
+
+-- 16 of 320 --
+
+
+
+-- 17 of 320 --
+
+
+
+-- 18 of 320 --
+
+
+
+-- 19 of 320 --
+
+
+
+-- 20 of 320 --
+
+
+
+-- 21 of 320 --
+
+
+
+-- 22 of 320 --
+
+
+
+-- 23 of 320 --
+
+
+
+-- 24 of 320 --
+
+
+
+-- 25 of 320 --
+
+
+
+-- 26 of 320 --
+
+
+
+-- 27 of 320 --
+
+
+
+-- 28 of 320 --
+
+
+
+-- 29 of 320 --
+
+
+
+-- 30 of 320 --
+
+
+
+-- 31 of 320 --
+
+
+
+-- 32 of 320 --
+
+
+
+-- 33 of 320 --
+
+
+
+-- 34 of 320 --
+
+
+
+-- 35 of 320 --
+
+
+
+-- 36 of 320 --
+
+
+
+-- 37 of 320 --
+
+
+
+-- 38 of 320 --
+
+
+
+-- 39 of 320 --
+
+
+
+-- 40 of 320 --
+
+
+
+-- 41 of 320 --
+
+
+
+-- 42 of 320 --
+
+
+
+-- 43 of 320 --
+
+
+
+-- 44 of 320 --
+
+
+
+-- 45 of 320 --
+
+
+
+-- 46 of 320 --
+
+
+
+-- 47 of 320 --
+
+
+
+-- 48 of 320 --
+
+
+
+-- 49 of 320 --
+
+
+
+-- 50 of 320 --
+
+
+
+-- 51 of 320 --
+
+
+
+-- 52 of 320 --
+
+
+
+-- 53 of 320 --
+
+
+
+-- 54 of 320 --
+
+
+
+-- 55 of 320 --
+
+
+
+-- 56 of 320 --
+
+
+
+-- 57 of 320 --
+
+
+
+-- 58 of 320 --
+
+
+
+-- 59 of 320 --
+
+
+
+-- 60 of 320 --
+
+
+
+-- 61 of 320 --
+
+
+
+-- 62 of 320 --
+
+
+
+-- 63 of 320 --
+
+
+
+-- 64 of 320 --
+
+
+
+-- 65 of 320 --
+
+
+
+-- 66 of 320 --
+
+
+
+-- 67 of 320 --
+
+
+
+-- 68 of 320 --
+
+
+
+-- 69 of 320 --
+
+
+
+-- 70 of 320 --
+
+
+
+-- 71 of 320 --
+
+
+
+-- 72 of 320 --
+
+
+
+-- 73 of 320 --
+
+
+
+-- 74 of 320 --
+
+
+
+-- 75 of 320 --
+
+
+
+-- 76 of 320 --
+
+
+
+-- 77 of 320 --
+
+
+
+-- 78 of 320 --
+
+
+
+-- 79 of 320 --
+
+
+
+-- 80 of 320 --
+
+
+
+-- 81 of 320 --
+
+
+
+-- 82 of 320 --
+
+
+
+-- 83 of 320 --
+
+
+
+-- 84 of 320 --
+
+
+
+-- 85 of 320 --
+
+
+
+-- 86 of 320 --
+
+
+
+-- 87 of 320 --
+
+
+
+-- 88 of 320 --
+
+
+
+-- 89 of 320 --
+
+
+
+-- 90 of 320 --
+
+
+
+-- 91 of 320 --
+
+
+
+-- 92 of 320 --
+
+
+
+-- 93 of 320 --
+
+
+
+-- 94 of 320 --
+
+
+
+-- 95 of 320 --
+
+
+
+-- 96 of 320 --
+
+
+
+-- 97 of 320 --
+
+
+
+-- 98 of 320 --
+
+
+
+-- 99 of 320 --
+
+
+
+-- 100 of 320 --
+
+
+
+-- 101 of 320 --
+
+
+
+-- 102 of 320 --
+
+
+
+-- 103 of 320 --
+
+
+
+-- 104 of 320 --
+
+
+
+-- 105 of 320 --
+
+
+
+-- 106 of 320 --
+
+
+
+-- 107 of 320 --
+
+
+
+-- 108 of 320 --
+
+
+
+-- 109 of 320 --
+
+
+
+-- 110 of 320 --
+
+
+
+-- 111 of 320 --
+
+
+
+-- 112 of 320 --
+
+
+
+-- 113 of 320 --
+
+
+
+-- 114 of 320 --
+
+
+
+-- 115 of 320 --
+
+
+
+-- 116 of 320 --
+
+
+
+-- 117 of 320 --
+
+
+
+-- 118 of 320 --
+
+
+
+-- 119 of 320 --
+
+
+
+-- 120 of 320 --
+
+
+
+-- 121 of 320 --
+
+
+
+-- 122 of 320 --
+
+
+
+-- 123 of 320 --
+
+
+
+-- 124 of 320 --
+
+
+
+-- 125 of 320 --
+
+
+
+-- 126 of 320 --
+
+
+
+-- 127 of 320 --
+
+
+
+-- 128 of 320 --
+
+
+
+-- 129 of 320 --
+
+
+
+-- 130 of 320 --
+
+
+
+-- 131 of 320 --
+
+
+
+-- 132 of 320 --
+
+
+
+-- 133 of 320 --
+
+
+
+-- 134 of 320 --
+
+
+
+-- 135 of 320 --
+
+
+
+-- 136 of 320 --
+
+
+
+-- 137 of 320 --
+
+
+
+-- 138 of 320 --
+
+
+
+-- 139 of 320 --
+
+
+
+-- 140 of 320 --
+
+
+
+-- 141 of 320 --
+
+
+
+-- 142 of 320 --
+
+
+
+-- 143 of 320 --
+
+
+
+-- 144 of 320 --
+
+
+
+-- 145 of 320 --
+
+
+
+-- 146 of 320 --
+
+
+
+-- 147 of 320 --
+
+
+
+-- 148 of 320 --
+
+
+
+-- 149 of 320 --
+
+
+
+-- 150 of 320 --
+
+
+
+-- 151 of 320 --
+
+
+
+-- 152 of 320 --
+
+
+
+-- 153 of 320 --
+
+
+
+-- 154 of 320 --
+
+
+
+-- 155 of 320 --
+
+
+
+-- 156 of 320 --
+
+
+
+-- 157 of 320 --
+
+
+
+-- 158 of 320 --
+
+
+
+-- 159 of 320 --
+
+
+
+-- 160 of 320 --
+
+
+
+-- 161 of 320 --
+
+
+
+-- 162 of 320 --
+
+
+
+-- 163 of 320 --
+
+
+
+-- 164 of 320 --
+
+
+
+-- 165 of 320 --
+
+
+
+-- 166 of 320 --
+
+
+
+-- 167 of 320 --
+
+
+
+-- 168 of 320 --
+
+
+
+-- 169 of 320 --
+
+
+
+-- 170 of 320 --
+
+
+
+-- 171 of 320 --
+
+
+
+-- 172 of 320 --
+
+
+
+-- 173 of 320 --
+
+
+
+-- 174 of 320 --
+
+
+
+-- 175 of 320 --
+
+
+
+-- 176 of 320 --
+
+
+
+-- 177 of 320 --
+
+
+
+-- 178 of 320 --
+
+
+
+-- 179 of 320 --
+
+
+
+-- 180 of 320 --
+
+
+
+-- 181 of 320 --
+
+
+
+-- 182 of 320 --
+
+
+
+-- 183 of 320 --
+
+
+
+-- 184 of 320 --
+
+
+
+-- 185 of 320 --
+
+
+
+-- 186 of 320 --
+
+
+
+-- 187 of 320 --
+
+
+
+-- 188 of 320 --
+
+
+
+-- 189 of 320 --
+
+
+
+-- 190 of 320 --
+
+
+
+-- 191 of 320 --
+
+
+
+-- 192 of 320 --
+
+
+
+-- 193 of 320 --
+
+
+
+-- 194 of 320 --
+
+
+
+-- 195 of 320 --
+
+
+
+-- 196 of 320 --
+
+
+
+-- 197 of 320 --
+
+
+
+-- 198 of 320 --
+
+
+
+-- 199 of 320 --
+
+
+
+-- 200 of 320 --
+
+
+
+-- 201 of 320 --
+
+
+
+-- 202 of 320 --
+
+
+
+-- 203 of 320 --
+
+
+
+-- 204 of 320 --
+
+
+
+-- 205 of 320 --
+
+
+
+-- 206 of 320 --
+
+
+
+-- 207 of 320 --
+
+
+
+-- 208 of 320 --
+
+
+
+-- 209 of 320 --
+
+
+
+-- 210 of 320 --
+
+
+
+-- 211 of 320 --
+
+
+
+-- 212 of 320 --
+
+
+
+-- 213 of 320 --
+
+
+
+-- 214 of 320 --
+
+
+
+-- 215 of 320 --
+
+
+
+-- 216 of 320 --
+
+
+
+-- 217 of 320 --
+
+
+
+-- 218 of 320 --
+
+
+
+-- 219 of 320 --
+
+
+
+-- 220 of 320 --
+
+
+
+-- 221 of 320 --
+
+
+
+-- 222 of 320 --
+
+
+
+-- 223 of 320 --
+
+
+
+-- 224 of 320 --
+
+
+
+-- 225 of 320 --
+
+
+
+-- 226 of 320 --
+
+
+
+-- 227 of 320 --
+
+
+
+-- 228 of 320 --
+
+
+
+-- 229 of 320 --
+
+
+
+-- 230 of 320 --
+
+
+
+-- 231 of 320 --
+
+
+
+-- 232 of 320 --
+
+
+
+-- 233 of 320 --
+
+
+
+-- 234 of 320 --
+
+
+
+-- 235 of 320 --
+
+
+
+-- 236 of 320 --
+
+
+
+-- 237 of 320 --
+
+
+
+-- 238 of 320 --
+
+
+
+-- 239 of 320 --
+
+
+
+-- 240 of 320 --
+
+
+
+-- 241 of 320 --
+
+
+
+-- 242 of 320 --
+
+
+
+-- 243 of 320 --
+
+
+
+-- 244 of 320 --
+
+
+
+-- 245 of 320 --
+
+
+
+-- 246 of 320 --
+
+
+
+-- 247 of 320 --
+
+
+
+-- 248 of 320 --
+
+
+
+-- 249 of 320 --
+
+
+
+-- 250 of 320 --
+
+
+
+-- 251 of 320 --
+
+
+
+-- 252 of 320 --
+
+
+
+-- 253 of 320 --
+
+
+
+-- 254 of 320 --
+
+
+
+-- 255 of 320 --
+
+
+
+-- 256 of 320 --
+
+
+
+-- 257 of 320 --
+
+
+
+-- 258 of 320 --
+
+
+
+-- 259 of 320 --
+
+
+
+-- 260 of 320 --
+
+
+
+-- 261 of 320 --
+
+
+
+-- 262 of 320 --
+
+
+
+-- 263 of 320 --
+
+
+
+-- 264 of 320 --
+
+
+
+-- 265 of 320 --
+
+
+
+-- 266 of 320 --
+
+
+
+-- 267 of 320 --
+
+
+
+-- 268 of 320 --
+
+
+
+-- 269 of 320 --
+
+
+
+-- 270 of 320 --
+
+
+
+-- 271 of 320 --
+
+
+
+-- 272 of 320 --
+
+
+
+-- 273 of 320 --
+
+
+
+-- 274 of 320 --
+
+
+
+-- 275 of 320 --
+
+
+
+-- 276 of 320 --
+
+
+
+-- 277 of 320 --
+
+
+
+-- 278 of 320 --
+
+
+
+-- 279 of 320 --
+
+
+
+-- 280 of 320 --
+
+
+
+-- 281 of 320 --
+
+
+
+-- 282 of 320 --
+
+
+
+-- 283 of 320 --
+
+
+
+-- 284 of 320 --
+
+
+
+-- 285 of 320 --
+
+
+
+-- 286 of 320 --
+
+
+
+-- 287 of 320 --
+
+
+
+-- 288 of 320 --
+
+
+
+-- 289 of 320 --
+
+
+
+-- 290 of 320 --
+
+
+
+-- 291 of 320 --
+
+
+
+-- 292 of 320 --
+
+
+
+-- 293 of 320 --
+
+
+
+-- 294 of 320 --
+
+
+
+-- 295 of 320 --
+
+
+
+-- 296 of 320 --
+
+
+
+-- 297 of 320 --
+
+
+
+-- 298 of 320 --
+
+
+
+-- 299 of 320 --
+
+
+
+-- 300 of 320 --
+
+
+
+-- 301 of 320 --
+
+
+
+-- 302 of 320 --
+
+
+
+-- 303 of 320 --
+
+
+
+-- 304 of 320 --
+
+
+
+-- 305 of 320 --
+
+
+
+-- 306 of 320 --
+
+
+
+-- 307 of 320 --
+
+
+
+-- 308 of 320 --
+
+
+
+-- 309 of 320 --
+
+
+
+-- 310 of 320 --
+
+
+
+-- 311 of 320 --
+
+
+
+-- 312 of 320 --
+
+
+
+-- 313 of 320 --
+
+
+
+-- 314 of 320 --
+
+
+
+-- 315 of 320 --
+
+
+
+-- 316 of 320 --
+
+
+
+-- 317 of 320 --
+
+
+
+-- 318 of 320 --
+
+
+
+-- 319 of 320 --
+
+
+
+-- 320 of 320 --
+

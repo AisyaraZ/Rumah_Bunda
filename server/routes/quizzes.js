@@ -7,7 +7,7 @@ router.use(authenticateToken);
 
 // GET /api/quizzes
 // List quizzes with attempts and highest/latest score for the logged-in user
-router.get('/', (req, res) => {
+router.get('/', async (req, res) => {
   try {
     const { subject } = req.query;
 
@@ -30,9 +30,13 @@ router.get('/', (req, res) => {
       params.push(subject);
     }
 
-    query += ` GROUP BY q.id ORDER BY q.order_index ASC `;
+    query += `
+      GROUP BY q.id, q.title, q.description, q.duration_minutes, q.total_questions, q.chapter_number,
+               s.name, s.slug, s.color_theme, q.order_index
+      ORDER BY q.order_index ASC
+    `;
 
-    const quizzes = db.prepare(query).all(...params);
+    const quizzes = await db.prepare(query).all(...params);
 
     return res.json({ quizzes });
   } catch (err) {
@@ -43,11 +47,11 @@ router.get('/', (req, res) => {
 
 // GET /api/quizzes/:id
 // Get quiz details and questions for taking the quiz (without answers)
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res) => {
   try {
     const { id } = req.params;
 
-    const quiz = db.prepare(`
+    const quiz = await db.prepare(`
       SELECT q.id, q.title, q.description, q.duration_minutes, q.total_questions, q.chapter_number,
              s.name as subject_name, s.slug as subject_slug, s.color_theme
       FROM quizzes q
@@ -60,7 +64,7 @@ router.get('/:id', (req, res) => {
     }
 
     // Questions without correct_option or explanation
-    const questions = db.prepare(`
+    const questions = await db.prepare(`
       SELECT id, question_number, difficulty, question_text, option_a, option_b, option_c, option_d
       FROM quiz_questions
       WHERE quiz_id = ?
@@ -76,7 +80,7 @@ router.get('/:id', (req, res) => {
 
 // POST /api/quizzes/:id/submit
 // Submit answers, calculate score, save attempt, return review & explanation
-router.post('/:id/submit', (req, res) => {
+router.post('/:id/submit', async (req, res) => {
   try {
     const { id } = req.params;
     const { user_answers } = req.body; // { [questionId]: 'A' | 'B' | 'C' | 'D' }
@@ -85,7 +89,7 @@ router.post('/:id/submit', (req, res) => {
       return res.status(400).json({ error: 'Data jawaban tidak valid.' });
     }
 
-    const quiz = db.prepare(`
+    const quiz = await db.prepare(`
       SELECT q.id, q.title, s.name as subject_name, s.slug as subject_slug
       FROM quizzes q
       JOIN subjects s ON s.id = q.subject_id
@@ -96,7 +100,7 @@ router.post('/:id/submit', (req, res) => {
       return res.status(404).json({ error: 'Kuis tidak ditemukan.' });
     }
 
-    const questions = db.prepare(`
+    const questions = await db.prepare(`
       SELECT id, question_number, question_text, option_a, option_b, option_c, option_d,
              correct_option, explanation
       FROM quiz_questions
@@ -136,7 +140,7 @@ router.post('/:id/submit', (req, res) => {
       VALUES (?, ?, ?, ?, ?, ?)
     `);
 
-    insertAttempt.run(
+    await insertAttempt.run(
       req.userId,
       quiz.id,
       score,
@@ -146,7 +150,7 @@ router.post('/:id/submit', (req, res) => {
     );
 
     // Log to learning activities
-    db.prepare(`
+    await db.prepare(`
       INSERT INTO learning_activities (user_id, activity_type, title, description, path)
       VALUES (?, 'quiz_completed', ?, ?, ?)
     `).run(
@@ -170,9 +174,9 @@ router.post('/:id/submit', (req, res) => {
 });
 
 // GET /api/quizzes/attempts/history
-router.get('/attempts/history', (req, res) => {
+router.get('/attempts/history', async (req, res) => {
   try {
-    const history = db.prepare(`
+    const history = await db.prepare(`
       SELECT qa.id, qa.score, qa.total_questions, qa.correct_answers, qa.completed_at,
              q.title as quiz_title, s.name as subject_name
       FROM quiz_attempts qa

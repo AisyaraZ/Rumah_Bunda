@@ -38,7 +38,7 @@ router.post('/register', async (req, res) => {
     }
 
     // Check duplicate username or email
-    const existingUser = db.prepare('SELECT id, username, email FROM users WHERE username = ? OR email = ?').get(cleanUsername, cleanEmail);
+    const existingUser = await db.prepare('SELECT id, username, email FROM users WHERE username = ? OR email = ?').get(cleanUsername, cleanEmail);
     if (existingUser) {
       if (existingUser.username === cleanUsername) {
         return res.status(409).json({ error: 'Username sudah digunakan oleh siswa lain.' });
@@ -55,11 +55,11 @@ router.post('/register', async (req, res) => {
       INSERT INTO users (full_name, username, email, password_hash, class_grade, avatar)
       VALUES (?, ?, ?, ?, 'VII SMP', 'student-1')
     `);
-    const result = insertStmt.run(full_name.trim(), cleanUsername, cleanEmail, password_hash);
+    const result = await insertStmt.run(full_name.trim(), cleanUsername, cleanEmail, password_hash);
     const userId = result.lastInsertRowid;
 
     // Log welcome activity
-    db.prepare(`
+    await db.prepare(`
       INSERT INTO learning_activities (user_id, activity_type, title, description, path)
       VALUES (?, 'profile_created', 'Selamat Datang di Rumah Bunda', 'Akun berhasil dibuat. Selamat belajar mandiri!', '/home')
     `).run(userId);
@@ -67,7 +67,7 @@ router.post('/register', async (req, res) => {
     // Generate JWT token
     const token = jwt.sign({ userId }, JWT_SECRET, { expiresIn: '30d' });
 
-    const user = db.prepare('SELECT id, full_name, username, email, class_grade, avatar, bio, created_at FROM users WHERE id = ?').get(userId);
+    const user = await db.prepare('SELECT id, full_name, username, email, class_grade, avatar, bio, created_at FROM users WHERE id = ?').get(userId);
 
     return res.status(201).json({
       message: 'Registrasi berhasil! Selamat datang di Rumah Bunda.',
@@ -92,7 +92,7 @@ router.post('/login', async (req, res) => {
     const cleanIdentifier = identifier.trim().toLowerCase();
 
     // Find by username or email
-    const user = db.prepare(`
+    const user = await db.prepare(`
       SELECT * FROM users WHERE LOWER(username) = ? OR LOWER(email) = ?
     `).get(cleanIdentifier, cleanIdentifier);
 
@@ -129,7 +129,7 @@ router.get('/me', authenticateToken, (req, res) => {
 });
 
 // PUT /api/auth/profile
-router.put('/profile', authenticateToken, (req, res) => {
+router.put('/profile', authenticateToken, async (req, res) => {
   try {
     const {
       full_name,
@@ -143,7 +143,7 @@ router.put('/profile', authenticateToken, (req, res) => {
       theme_pref
     } = req.body;
 
-    const currentUser = db.prepare('SELECT * FROM users WHERE id = ?').get(req.userId);
+    const currentUser = await db.prepare('SELECT * FROM users WHERE id = ?').get(req.userId);
     if (!currentUser) {
       return res.status(404).json({ error: 'Pengguna tidak ditemukan.' });
     }
@@ -164,7 +164,7 @@ router.put('/profile', authenticateToken, (req, res) => {
       if (!/^[a-zA-Z0-9_]{3,20}$/.test(cleanUsername)) {
         return res.status(400).json({ error: 'Username hanya boleh huruf, angka, dan garis bawah (3-20 karakter).' });
       }
-      const existingUser = db.prepare('SELECT id FROM users WHERE LOWER(username) = ? AND id != ?').get(cleanUsername, req.userId);
+      const existingUser = await db.prepare('SELECT id FROM users WHERE LOWER(username) = ? AND id != ?').get(cleanUsername, req.userId);
       if (existingUser) {
         return res.status(409).json({ error: 'Username sudah digunakan oleh siswa lain.' });
       }
@@ -178,7 +178,7 @@ router.put('/profile', authenticateToken, (req, res) => {
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(cleanEmail)) {
         return res.status(400).json({ error: 'Format email tidak valid.' });
       }
-      const existingEmail = db.prepare('SELECT id FROM users WHERE LOWER(email) = ? AND id != ?').get(cleanEmail, req.userId);
+      const existingEmail = await db.prepare('SELECT id FROM users WHERE LOWER(email) = ? AND id != ?').get(cleanEmail, req.userId);
       if (existingEmail) {
         return res.status(409).json({ error: 'Email sudah terdaftar pada akun lain.' });
       }
@@ -213,7 +213,7 @@ router.put('/profile', authenticateToken, (req, res) => {
     }
 
     // Execute update
-    db.prepare(`
+    await db.prepare(`
       UPDATE users
       SET full_name = ?,
           username = ?,
@@ -240,12 +240,12 @@ router.put('/profile', authenticateToken, (req, res) => {
     );
 
     // Log activity
-    db.prepare(`
+    await db.prepare(`
       INSERT INTO learning_activities (user_id, activity_type, title, description, path)
       VALUES (?, 'profile_updated', 'Profil Siswa Diperbarui', 'Data profil dan informasi akun berhasil diperbarui.', '/profil')
     `).run(req.userId);
 
-    const updatedUser = db.prepare(`
+    const updatedUser = await db.prepare(`
       SELECT id, full_name, username, email, class_grade, avatar, bio,
              school_name, education_level, notification_pref, theme_pref,
              created_at, updated_at
@@ -264,7 +264,7 @@ router.put('/profile', authenticateToken, (req, res) => {
 
 // POST /api/auth/avatar
 // Upload or change avatar image (Base64 data URL with JPG/PNG validation)
-router.post('/avatar', authenticateToken, (req, res) => {
+router.post('/avatar', authenticateToken, async (req, res) => {
   try {
     const { avatar_data } = req.body;
 
@@ -287,7 +287,7 @@ router.post('/avatar', authenticateToken, (req, res) => {
       return res.status(400).json({ error: 'Ukuran file foto maksimal 5 MB.' });
     }
 
-    db.prepare(`
+    await db.prepare(`
       UPDATE users
       SET avatar = ?,
           updated_at = CURRENT_TIMESTAMP
@@ -295,12 +295,12 @@ router.post('/avatar', authenticateToken, (req, res) => {
     `).run(avatar_data, req.userId);
 
     // Log activity
-    db.prepare(`
+    await db.prepare(`
       INSERT INTO learning_activities (user_id, activity_type, title, description, path)
       VALUES (?, 'avatar_updated', 'Foto Profil Diperbarui', 'Foto profil akun siswa berhasil diubah.', '/pengaturan')
     `).run(req.userId);
 
-    const updatedUser = db.prepare(`
+    const updatedUser = await db.prepare(`
       SELECT id, full_name, username, email, class_grade, avatar, bio,
              school_name, education_level, notification_pref, theme_pref,
              created_at, updated_at
@@ -320,9 +320,9 @@ router.post('/avatar', authenticateToken, (req, res) => {
 
 // DELETE /api/auth/avatar
 // Reset avatar to default
-router.delete('/avatar', authenticateToken, (req, res) => {
+router.delete('/avatar', authenticateToken, async (req, res) => {
   try {
-    db.prepare(`
+    await db.prepare(`
       UPDATE users
       SET avatar = 'student-1',
           updated_at = CURRENT_TIMESTAMP
@@ -330,12 +330,12 @@ router.delete('/avatar', authenticateToken, (req, res) => {
     `).run(req.userId);
 
     // Log activity
-    db.prepare(`
+    await db.prepare(`
       INSERT INTO learning_activities (user_id, activity_type, title, description, path)
       VALUES (?, 'avatar_removed', 'Foto Profil Dihapus', 'Foto profil dikembalikan ke inisial default.', '/pengaturan')
     `).run(req.userId);
 
-    const updatedUser = db.prepare(`
+    const updatedUser = await db.prepare(`
       SELECT id, full_name, username, email, class_grade, avatar, bio,
              school_name, education_level, notification_pref, theme_pref,
              created_at, updated_at
@@ -370,7 +370,7 @@ router.put('/change-password', authenticateToken, async (req, res) => {
       return res.status(400).json({ error: 'Konfirmasi kata sandi baru tidak cocok.' });
     }
 
-    const user = db.prepare('SELECT password_hash FROM users WHERE id = ?').get(req.userId);
+    const user = await db.prepare('SELECT password_hash FROM users WHERE id = ?').get(req.userId);
     const isMatch = await bcrypt.compare(current_password, user.password_hash);
 
     if (!isMatch) {
@@ -380,14 +380,14 @@ router.put('/change-password', authenticateToken, async (req, res) => {
     const salt = await bcrypt.genSalt(10);
     const newHash = await bcrypt.hash(new_password, salt);
 
-    db.prepare(`
+    await db.prepare(`
       UPDATE users
       SET password_hash = ?, updated_at = CURRENT_TIMESTAMP
       WHERE id = ?
     `).run(newHash, req.userId);
 
     // Log activity
-    db.prepare(`
+    await db.prepare(`
       INSERT INTO learning_activities (user_id, activity_type, title, description, path)
       VALUES (?, 'security_update', 'Kata Sandi Diubah', 'Kata sandi akun berhasil diperbarui demi keamanan.', '/pengaturan')
     `).run(req.userId);

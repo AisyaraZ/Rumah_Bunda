@@ -3,7 +3,7 @@ const { db } = require('./db');
 
 const JWT_SECRET = process.env.JWT_SECRET || 'rumah_bunda_lms_super_secret_key_2025';
 
-function authenticateToken(req, res, next) {
+async function authenticateToken(req, res, next) {
   const authHeader = req.headers['authorization'];
   const token = authHeader && authHeader.split(' ')[1];
 
@@ -13,7 +13,7 @@ function authenticateToken(req, res, next) {
 
   try {
     const decoded = jwt.verify(token, JWT_SECRET);
-    const user = db.prepare(`
+    const user = await db.prepare(`
       SELECT id, full_name, username, email, class_grade, avatar, bio,
              school_name, education_level, notification_pref, theme_pref,
              created_at, updated_at

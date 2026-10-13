@@ -8,14 +8,14 @@ router.use(authenticateToken);
 
 // GET /api/subjects
 // Returns all 4 subjects with user's completion progress
-router.get('/', (req, res) => {
+router.get('/', async (req, res) => {
   try {
-    const subjects = db.prepare(`
+    const subjects = await db.prepare(`
       SELECT s.id, s.slug, s.name, s.icon, s.description, s.color_theme, s.order_index,
              COUNT(c.id) as total_chapters
       FROM subjects s
       LEFT JOIN chapters c ON c.subject_id = s.id
-      GROUP BY s.id
+      GROUP BY s.id, s.slug, s.name, s.icon, s.description, s.color_theme, s.order_index
       ORDER BY s.order_index ASC
     `).all();
 
@@ -27,8 +27,9 @@ router.get('/', (req, res) => {
       WHERE cp.user_id = ? AND c.subject_id = ? AND cp.status = 'completed'
     `);
 
-    const result = subjects.map(sub => {
-      const { completed_chapters } = userProgressStmt.get(req.userId, sub.id);
+    const result = await Promise.all(subjects.map(async sub => {
+      const prog = await userProgressStmt.get(req.userId, sub.id);
+      const completed_chapters = prog ? prog.completed_chapters : 0;
       const percentage = sub.total_chapters > 0 
         ? Math.round((completed_chapters / sub.total_chapters) * 100) 
         : 0;
@@ -37,7 +38,7 @@ router.get('/', (req, res) => {
         completed_chapters,
         progress_percentage: percentage
       };
-    });
+    }));
 
     return res.json({ subjects: result });
   } catch (err) {
@@ -48,16 +49,16 @@ router.get('/', (req, res) => {
 
 // GET /api/subjects/:slug
 // Returns subject details with chapter list and per-chapter completion status
-router.get('/:slug', (req, res) => {
+router.get('/:slug', async (req, res) => {
   try {
     const { slug } = req.params;
-    const subject = db.prepare('SELECT * FROM subjects WHERE slug = ?').get(slug);
+    const subject = await db.prepare('SELECT * FROM subjects WHERE slug = ?').get(slug);
 
     if (!subject) {
       return res.status(404).json({ error: 'Mata pelajaran tidak ditemukan.' });
     }
 
-    const chapters = db.prepare(`
+    const chapters = await db.prepare(`
       SELECT c.id, c.chapter_number, c.title, c.description, c.order_index,
              COALESCE(cp.status, 'not_started') as status,
              cp.completed_at,
@@ -76,11 +77,11 @@ router.get('/:slug', (req, res) => {
     const quizAttemptStmt = db.prepare('SELECT MAX(score) as highest_score, COUNT(*) as attempt_count FROM quiz_attempts WHERE user_id = ? AND quiz_id = ?');
     const gameAttemptStmt = db.prepare('SELECT MAX(score) as highest_score, COUNT(*) as play_count FROM game_attempts WHERE user_id = ? AND game_id = ?');
 
-    const enrichedChapters = chapters.map(c => {
-      const q = quizStmt.get(subject.id, c.chapter_number);
-      const g = gameStmt.get(subject.id, c.chapter_number);
-      const qStat = q ? quizAttemptStmt.get(req.userId, q.id) : null;
-      const gStat = g ? gameAttemptStmt.get(req.userId, g.id) : null;
+    const enrichedChapters = await Promise.all(chapters.map(async c => {
+      const q = await quizStmt.get(subject.id, c.chapter_number);
+      const g = await gameStmt.get(subject.id, c.chapter_number);
+      const qStat = q ? await quizAttemptStmt.get(req.userId, q.id) : null;
+      const gStat = g ? await gameAttemptStmt.get(req.userId, g.id) : null;
 
       const completionPct = c.status === 'completed' ? 100 : c.status === 'in_progress' ? 50 : 0;
 
@@ -90,7 +91,7 @@ router.get('/:slug', (req, res) => {
         quiz: q ? { ...q, highest_score: qStat?.highest_score, attempt_count: qStat?.attempt_count || 0 } : null,
         game: g ? { ...g, highest_score: gStat?.highest_score, play_count: gStat?.play_count || 0 } : null
       };
-    });
+    }));
 
     return res.json({
       subject: {
@@ -109,17 +110,17 @@ router.get('/:slug', (req, res) => {
 
 // GET /api/subjects/:slug/chapters/:chapterNumber
 // Returns chapter detail, navigation to prev/next, and logs study activity
-router.get('/:slug/chapters/:chapterNumber', (req, res) => {
+router.get('/:slug/chapters/:chapterNumber', async (req, res) => {
   try {
     const { slug, chapterNumber } = req.params;
     const chapNum = parseInt(chapterNumber, 10);
 
-    const subject = db.prepare('SELECT id, slug, name, icon, color_theme FROM subjects WHERE slug = ?').get(slug);
+    const subject = await db.prepare('SELECT id, slug, name, icon, color_theme FROM subjects WHERE slug = ?').get(slug);
     if (!subject) {
       return res.status(404).json({ error: 'Mata pelajaran tidak ditemukan.' });
     }
 
-    const chapter = db.prepare(`
+    const chapter = await db.prepare(`
       SELECT * FROM chapters WHERE subject_id = ? AND chapter_number = ?
     `).get(subject.id, chapNum);
 
@@ -128,27 +129,27 @@ router.get('/:slug/chapters/:chapterNumber', (req, res) => {
     }
 
     // Previous and Next chapter info
-    const prevChapter = db.prepare(`
+    const prevChapter = await db.prepare(`
       SELECT chapter_number, title FROM chapters
       WHERE subject_id = ? AND chapter_number < ?
       ORDER BY chapter_number DESC LIMIT 1
     `).get(subject.id, chapNum);
 
-    const nextChapter = db.prepare(`
+    const nextChapter = await db.prepare(`
       SELECT chapter_number, title FROM chapters
       WHERE subject_id = ? AND chapter_number > ?
       ORDER BY chapter_number ASC LIMIT 1
     `).get(subject.id, chapNum);
 
     // Get current progress
-    let progress = db.prepare(`
+    let progress = await db.prepare(`
       SELECT status, completed_at, last_accessed_at FROM chapter_progress
       WHERE user_id = ? AND chapter_id = ?
     `).get(req.userId, chapter.id);
 
     // If no record exists yet, mark as 'in_progress' and log access
     if (!progress) {
-      db.prepare(`
+      await db.prepare(`
         INSERT INTO chapter_progress (user_id, chapter_id, status, last_accessed_at)
         VALUES (?, ?, 'in_progress', CURRENT_TIMESTAMP)
       `).run(req.userId, chapter.id);
@@ -156,7 +157,7 @@ router.get('/:slug/chapters/:chapterNumber', (req, res) => {
       progress = { status: 'in_progress', completed_at: null, last_accessed_at: new Date().toISOString() };
 
       // Log activity
-      db.prepare(`
+      await db.prepare(`
         INSERT INTO learning_activities (user_id, activity_type, title, description, path)
         VALUES (?, 'chapter_read', ?, ?, ?)
       `).run(
@@ -167,7 +168,7 @@ router.get('/:slug/chapters/:chapterNumber', (req, res) => {
       );
     } else {
       // Update last accessed time
-      db.prepare(`
+      await db.prepare(`
         UPDATE chapter_progress
         SET last_accessed_at = CURRENT_TIMESTAMP
         WHERE user_id = ? AND chapter_id = ?
@@ -175,14 +176,14 @@ router.get('/:slug/chapters/:chapterNumber', (req, res) => {
     }
 
     // Check for associated quiz
-    const associatedQuiz = db.prepare(`
+    const associatedQuiz = await db.prepare(`
       SELECT id, title, description, total_questions, duration_minutes FROM quizzes
       WHERE subject_id = ? AND chapter_number = ?
     `).get(subject.id, chapNum);
 
     let quizWithStats = null;
     if (associatedQuiz) {
-      const qStats = db.prepare(`
+      const qStats = await db.prepare(`
         SELECT MAX(score) as highest_score, COUNT(*) as attempt_count,
                (SELECT score FROM quiz_attempts WHERE user_id = ? AND quiz_id = ? ORDER BY completed_at DESC LIMIT 1) as latest_score
         FROM quiz_attempts
@@ -197,14 +198,14 @@ router.get('/:slug/chapters/:chapterNumber', (req, res) => {
     }
 
     // Check for associated educational game
-    const associatedGame = db.prepare(`
+    const associatedGame = await db.prepare(`
       SELECT id, name, slug, icon, description FROM games
       WHERE subject_id = ? AND order_index = ? AND is_active = 1
     `).get(subject.id, chapNum);
 
     let gameWithStats = null;
     if (associatedGame) {
-      const gStats = db.prepare(`
+      const gStats = await db.prepare(`
         SELECT MAX(score) as highest_score, COUNT(*) as play_count
         FROM game_attempts
         WHERE user_id = ? AND game_id = ?
@@ -246,7 +247,7 @@ router.get('/:slug/chapters/:chapterNumber', (req, res) => {
 
 // POST /api/subjects/chapters/:chapterId/status
 // Update status: 'completed' or 'in_progress'
-router.post('/chapters/:chapterId/status', (req, res) => {
+router.post('/chapters/:chapterId/status', async (req, res) => {
   try {
     const { chapterId } = req.params;
     const { status } = req.body;
@@ -255,7 +256,7 @@ router.post('/chapters/:chapterId/status', (req, res) => {
       return res.status(400).json({ error: 'Status tidak valid.' });
     }
 
-    const chapter = db.prepare(`
+    const chapter = await db.prepare(`
       SELECT c.*, s.name as subject_name, s.slug as subject_slug
       FROM chapters c
       JOIN subjects s ON s.id = c.subject_id
@@ -268,7 +269,7 @@ router.post('/chapters/:chapterId/status', (req, res) => {
 
     const completedAt = status === 'completed' ? new Date().toISOString() : null;
 
-    db.prepare(`
+    await db.prepare(`
       INSERT INTO chapter_progress (user_id, chapter_id, status, completed_at, last_accessed_at)
       VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP)
       ON CONFLICT(user_id, chapter_id) DO UPDATE SET
@@ -279,7 +280,7 @@ router.post('/chapters/:chapterId/status', (req, res) => {
 
     // If marked completed, log learning activity
     if (status === 'completed') {
-      db.prepare(`
+      await db.prepare(`
         INSERT INTO learning_activities (user_id, activity_type, title, description, path)
         VALUES (?, 'chapter_completed', ?, ?, ?)
       `).run(

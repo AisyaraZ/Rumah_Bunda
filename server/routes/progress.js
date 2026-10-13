@@ -7,16 +7,16 @@ router.use(authenticateToken);
 
 // GET /api/progress/summary
 // Summary for Home dashboard and Profile
-router.get('/summary', (req, res) => {
+router.get('/summary', async (req, res) => {
   try {
     const userId = req.userId;
 
     // Total chapters in system
-    const totalChaptersRow = db.prepare('SELECT COUNT(*) as count FROM chapters').get();
+    const totalChaptersRow = await db.prepare('SELECT COUNT(*) as count FROM chapters').get();
     const totalChapters = totalChaptersRow ? totalChaptersRow.count : 0;
 
     // User's completed chapters
-    const completedChaptersRow = db.prepare(`
+    const completedChaptersRow = await db.prepare(`
       SELECT COUNT(*) as count FROM chapter_progress
       WHERE user_id = ? AND status = 'completed'
     `).get(userId);
@@ -27,7 +27,7 @@ router.get('/summary', (req, res) => {
       : 0;
 
     // Total quizzes attempted by user
-    const quizStats = db.prepare(`
+    const quizStats = await db.prepare(`
       SELECT COUNT(*) as total_attempts,
              AVG(score) as avg_score,
              MAX(score) as max_score
@@ -40,7 +40,7 @@ router.get('/summary', (req, res) => {
     const maxQuizScore = quizStats && quizStats.max_score !== null ? quizStats.max_score : 0;
 
     // Best game score
-    const gameStats = db.prepare(`
+    const gameStats = await db.prepare(`
       SELECT MAX(score) as best_score, COUNT(*) as total_played
       FROM game_attempts
       WHERE user_id = ?
@@ -50,12 +50,12 @@ router.get('/summary', (req, res) => {
     const totalGamesPlayed = gameStats ? gameStats.total_played : 0;
 
     // Subject breakdown
-    const subjects = db.prepare(`
+    const subjects = await db.prepare(`
       SELECT s.id, s.name, s.slug, s.icon, s.color_theme,
              COUNT(c.id) as total_chapters
       FROM subjects s
       LEFT JOIN chapters c ON c.subject_id = s.id
-      GROUP BY s.id
+      GROUP BY s.id, s.name, s.slug, s.icon, s.color_theme, s.order_index
       ORDER BY s.order_index ASC
     `).all();
 
@@ -66,18 +66,19 @@ router.get('/summary', (req, res) => {
       WHERE cp.user_id = ? AND c.subject_id = ? AND cp.status = 'completed'
     `);
 
-    const subjectBreakdown = subjects.map(sub => {
-      const { completed_count } = subjectProgressStmt.get(userId, sub.id);
+    const subjectBreakdown = await Promise.all(subjects.map(async sub => {
+      const prog = await subjectProgressStmt.get(userId, sub.id);
+      const completed_count = prog ? prog.completed_count : 0;
       const pct = sub.total_chapters > 0 ? Math.round((completed_count / sub.total_chapters) * 100) : 0;
       return {
         ...sub,
         completed_chapters: completed_count,
         progress_percentage: pct
       };
-    });
+    }));
 
     // Last learning activity
-    const lastActivity = db.prepare(`
+    const lastActivity = await db.prepare(`
       SELECT * FROM learning_activities
       WHERE user_id = ?
       ORDER BY created_at DESC
@@ -86,7 +87,7 @@ router.get('/summary', (req, res) => {
 
     // Unfinished chapter to "Lanjutkan Belajar"
     // First priority: last accessed chapter that is still in_progress
-    let continueChapter = db.prepare(`
+    let continueChapter = await db.prepare(`
       SELECT c.id, c.chapter_number, c.title, s.name as subject_name, s.slug as subject_slug, cp.last_accessed_at
       FROM chapter_progress cp
       JOIN chapters c ON c.id = cp.chapter_id
@@ -98,7 +99,7 @@ router.get('/summary', (req, res) => {
 
     // Second priority: first chapter of first subject not yet completed
     if (!continueChapter) {
-      continueChapter = db.prepare(`
+      continueChapter = await db.prepare(`
         SELECT c.id, c.chapter_number, c.title, s.name as subject_name, s.slug as subject_slug
         FROM chapters c
         JOIN subjects s ON s.id = c.subject_id
@@ -110,10 +111,10 @@ router.get('/summary', (req, res) => {
     }
 
     // Dedicated Matematika Summary & Bab 1, 2, 3 Breakdown
-    const mtkSubject = db.prepare('SELECT id, name, slug FROM subjects WHERE slug = ?').get('matematika');
+    const mtkSubject = await db.prepare('SELECT id, name, slug FROM subjects WHERE slug = ?').get('matematika');
     let mathSummary = null;
     if (mtkSubject) {
-      const mtkChapters = db.prepare(`
+      const mtkChapters = await db.prepare(`
         SELECT c.id, c.chapter_number, c.title, c.description,
                COALESCE(cp.status, 'not_started') as status,
                cp.completed_at
@@ -127,7 +128,7 @@ router.get('/summary', (req, res) => {
       const mtkPct = mtkChapters.length > 0 ? Math.round((mtkCompleted / mtkChapters.length) * 100) : 0;
 
       // Latest Math Quiz attempt
-      const latestMathQuiz = db.prepare(`
+      const latestMathQuiz = await db.prepare(`
         SELECT qa.score, qa.total_questions, qa.correct_answers, qa.completed_at,
                q.title as quiz_title, q.chapter_number
         FROM quiz_attempts qa
@@ -138,7 +139,7 @@ router.get('/summary', (req, res) => {
       `).get(userId, mtkSubject.id);
 
       // Quiz per chapter breakdown
-      const mathQuizzes = db.prepare(`
+      const mathQuizzes = await db.prepare(`
         SELECT q.id, q.chapter_number, q.title, q.total_questions,
                MAX(qa.score) as highest_score,
                COUNT(qa.id) as attempt_count,
@@ -146,7 +147,7 @@ router.get('/summary', (req, res) => {
         FROM quizzes q
         LEFT JOIN quiz_attempts qa ON qa.quiz_id = q.id AND qa.user_id = ?
         WHERE q.subject_id = ?
-        GROUP BY q.id
+        GROUP BY q.id, q.chapter_number, q.title, q.total_questions
         ORDER BY q.chapter_number ASC
       `).all(userId, userId, mtkSubject.id);
 
@@ -161,10 +162,10 @@ router.get('/summary', (req, res) => {
     }
 
     // Dedicated Bahasa Indonesia Summary & Bab 1, 2, 3 Breakdown
-    const bIndoSubject = db.prepare('SELECT id, name, slug FROM subjects WHERE slug = ?').get('bahasa-indonesia');
+    const bIndoSubject = await db.prepare('SELECT id, name, slug FROM subjects WHERE slug = ?').get('bahasa-indonesia');
     let bIndoSummary = null;
     if (bIndoSubject) {
-      const bIndoChapters = db.prepare(`
+      const bIndoChapters = await db.prepare(`
         SELECT c.id, c.chapter_number, c.title, c.description,
                COALESCE(cp.status, 'not_started') as status,
                cp.completed_at
@@ -178,7 +179,7 @@ router.get('/summary', (req, res) => {
       const bIndoPct = bIndoChapters.length > 0 ? Math.round((bIndoCompleted / bIndoChapters.length) * 100) : 0;
 
       // Latest Bahasa Indonesia Quiz attempt
-      const latestBIndoQuiz = db.prepare(`
+      const latestBIndoQuiz = await db.prepare(`
         SELECT qa.score, qa.total_questions, qa.correct_answers, qa.completed_at,
                q.title as quiz_title, q.chapter_number
         FROM quiz_attempts qa
@@ -189,7 +190,7 @@ router.get('/summary', (req, res) => {
       `).get(userId, bIndoSubject.id);
 
       // Quiz per chapter breakdown
-      const bIndoQuizzes = db.prepare(`
+      const bIndoQuizzes = await db.prepare(`
         SELECT q.id, q.chapter_number, q.title, q.total_questions,
                MAX(qa.score) as highest_score,
                COUNT(qa.id) as attempt_count,
@@ -197,7 +198,7 @@ router.get('/summary', (req, res) => {
         FROM quizzes q
         LEFT JOIN quiz_attempts qa ON qa.quiz_id = q.id AND qa.user_id = ?
         WHERE q.subject_id = ?
-        GROUP BY q.id
+        GROUP BY q.id, q.chapter_number, q.title, q.total_questions
         ORDER BY q.chapter_number ASC
       `).all(userId, userId, bIndoSubject.id);
 
@@ -212,7 +213,7 @@ router.get('/summary', (req, res) => {
     }
 
     // High scores per game
-    const gameHighScores = db.prepare(`
+    const gameHighScores = await db.prepare(`
       SELECT g.id, g.name, g.slug, g.icon, g.subject_id,
              MAX(ga.score) as highest_score,
              COUNT(ga.id) as play_count,
@@ -220,7 +221,7 @@ router.get('/summary', (req, res) => {
       FROM games g
       LEFT JOIN game_attempts ga ON ga.game_id = g.id AND ga.user_id = ?
       WHERE g.is_active = 1
-      GROUP BY g.id
+      GROUP BY g.id, g.name, g.slug, g.icon, g.subject_id, g.order_index
       ORDER BY g.order_index ASC
     `).all(userId, userId);
 
@@ -254,9 +255,9 @@ router.get('/summary', (req, res) => {
 
 // GET /api/progress/activities
 // Timeline of all learning activities for Capaian Pembelajaran page
-router.get('/activities', (req, res) => {
+router.get('/activities', async (req, res) => {
   try {
-    const activities = db.prepare(`
+    const activities = await db.prepare(`
       SELECT id, activity_type, title, description, path, created_at
       FROM learning_activities
       WHERE user_id = ?
